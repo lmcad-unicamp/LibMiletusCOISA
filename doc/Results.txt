@@ -1,0 +1,426 @@
+Examples/test_simples: (Just serial)
+
+	Free heap size: 46088
+
+Our:
+	From: 10k-22k 
+
+
+
+Empty sketch:
+
+	Sketch uses 239369 bytes (22%) of program storage space. Maximum is 1044464 bytes.
+	Global variables use 33036 bytes (40%) of dynamic memory, leaving 48884 bytes for local variables. Maximum is 81920 bytes.
+
+Our sketch:
+
+	Sketch uses 326381 bytes (31%) of program storage space. Maximum is 1044464 bytes.
+	Global variables use 58804 bytes (71%) of dynamic memory, leaving 23116 bytes for local variables. Maximum is 81920 bytes.
+
+
+
+
+Small Min_max
+
+***instruction_count: 33
+Global cycle Count: 17400
+I receive: 2.880000
+***instruction_count: 66
+Global cycle Count: 32762
+I receive: 15.559999
+***instruction_count: 99
+Global cycle Count: 43705
+I receive: 31.539999
+***instruction_count: 152
+Global cycle Count: 58894
+I receive: 16.170000
+***instruction_count: 185
+Global cycle Count: 70473
+I receive: 54.939999
+***instruction_count: 238
+Global cycle Count: 85661
+I receive: 25.300001
+***instruction_count: 291
+Global cycle Count: 100855
+I receive: 20.000000
+***instruction_count: 324
+Global cycle Count: 112113
+I receive: 19.719999
+***instruction_count: 357
+Global cycle Count: 124318
+I receive: 16.639999
+***instruction_count: 390
+Global cycle Count: 135575
+I receive: 20.809999
+***instruction_count: 423
+Global cycle Count: 146518
+
+
+
+***instruction_count: 33
+Global cycle Count: 18021
+I receive: 2.880000
+***instruction_count: 66
+Global cycle Count: 33383
+I receive: 15.559999
+***instruction_count: 99
+Global cycle Count: 44326
+I receive: 31.539999
+***instruction_count: 152
+Global cycle Count: 59515
+I receive: 16.170000
+***instruction_count: 185
+Global cycle Count: 71094
+I receive: 54.939999
+***instruction_count: 238
+Global cycle Count: 87229
+I receive: 25.300001
+***instruction_count: 291
+Global cycle Count: 102423
+I receive: 20.000000
+***instruction_count: 324
+Global cycle Count: 113681
+I receive: 19.719999
+***instruction_count: 357
+Global cycle Count: 124939
+I receive: 16.639999
+***instruction_count: 390
+Global cycle Count: 136196
+I receive: 20.809999
+***instruction_count: 423
+Global cycle Count: 147139
+
+
+***instruction_count: 33
+Global cycle Count: 16213
+I receive: 2.880000
+***instruction_count: 66
+Global cycle Count: 31890
+I receive: 15.559999
+***instruction_count: 99
+Global cycle Count: 42833
+I receive: 31.539999
+***instruction_count: 152
+Global cycle Count: 58022
+I receive: 16.170000
+***instruction_count: 185
+Global cycle Count: 69286
+I receive: 54.939999
+***instruction_count: 238
+Global cycle Count: 84474
+I receive: 25.300001
+***instruction_count: 291
+Global cycle Count: 100930
+I receive: 20.000000
+***instruction_count: 324
+Global cycle Count: 112188
+I receive: 19.719999
+***instruction_count: 357
+Global cycle Count: 123132
+I receive: 16.639999
+***instruction_count: 390
+Global cycle Count: 134389
+I receive: 20.809999
+***instruction_count: 423
+Global cycle Count: 145647
+
+***instruction_count: 33
+Global cycle Count: 16903
+I receive: 2.880000
+***instruction_count: 66
+Global cycle Count: 31951
+I receive: 15.559999
+***instruction_count: 99
+Global cycle Count: 42894
+I receive: 31.539999
+***instruction_count: 152
+Global cycle Count: 58083
+I receive: 16.170000
+***instruction_count: 185
+Global cycle Count: 69824
+I receive: 54.939999
+***instruction_count: 238
+Global cycle Count: 85959
+I receive: 25.300001
+***instruction_count: 291
+Global cycle Count: 100838
+I receive: 20.000000
+***instruction_count: 324
+Global cycle Count: 112411
+I receive: 19.719999
+***instruction_count: 357
+Global cycle Count: 123040
+I receive: 16.639999
+***instruction_count: 390
+Global cycle Count: 134297
+I receive: 20.809999
+***instruction_count: 423
+Global cycle Count: 144925
+
+
+Medium Min_max:
+
+***instruction_count: 33
+Global cycle Count with: 94090
+Global cycle Count without: 16606
+I receive: 5.700000
+***instruction_count: 66
+Global cycle Count with: 527858
+Global cycle Count without: 229939
+I receive: 19.260000
+***instruction_count: 99
+Global cycle Count with: 551192
+Global cycle Count without: 241829
+I receive: 11.200000
+***instruction_count: 132
+Global cycle Count with: 692109
+Global cycle Count without: 254034
+I receive: 25.080000
+***instruction_count: 185
+Global cycle Count with: 832157
+Global cycle Count without: 269856
+I receive: 25.740000
+***instruction_count: 238
+Global cycle Count with: 965897
+Global cycle Count without: 285993
+I receive: 13.759999
+***instruction_count: 271
+Global cycle Count with: 1103825
+Global cycle Count without: 297883
+I receive: 42.320000
+***instruction_count: 324
+Global cycle Count with: 1243405
+Global cycle Count without: 313705
+I receive: 16.219999
+***instruction_count: 357
+Global cycle Count with: 1379338
+Global cycle Count without: 326225
+I receive: 17.549999
+***instruction_count: 390
+Global cycle Count with: 1520001
+Global cycle Count without: 338115
+I receive: 27.939999
+***instruction_count: 443
+Global cycle Count with: 1640802
+Global cycle Count without: 354567
+I receive: 15.589999
+***instruction_count: 476
+Global cycle Count with: 1771552
+Global cycle Count without: 366772
+I receive: 2.030000
+***instruction_count: 509
+Global cycle Count with: 1804872
+Global cycle Count without: 381787
+
+***instruction_count: 33
+Global cycle Count with: 92315
+Global cycle Count without: 16382
+I receive: 5.700000
+***instruction_count: 66
+Global cycle Count with: 677002
+Global cycle Count without: 314372
+I receive: 19.260000
+***instruction_count: 99
+Global cycle Count with: 700152
+Global cycle Count without: 325947
+I receive: 11.200000
+***instruction_count: 132
+Global cycle Count with: 840597
+Global cycle Count without: 338467
+I receive: 25.080000
+***instruction_count: 185
+Global cycle Count with: 979796
+Global cycle Count without: 353974
+I receive: 25.740000
+***instruction_count: 238
+Global cycle Count with: 1115864
+Global cycle Count without: 369796
+I receive: 13.759999
+***instruction_count: 271
+Global cycle Count with: 1253169
+Global cycle Count without: 381686
+I receive: 42.320000
+***instruction_count: 324
+Global cycle Count with: 1393558
+Global cycle Count without: 397508
+I receive: 16.219999
+***instruction_count: 357
+Global cycle Count with: 1530421
+Global cycle Count without: 409398
+I receive: 17.549999
+***instruction_count: 390
+Global cycle Count with: 1671236
+Global cycle Count without: 421288
+I receive: 27.939999
+***instruction_count: 443
+Global cycle Count with: 1802969
+Global cycle Count without: 437110
+I receive: 15.589999
+***instruction_count: 476
+Global cycle Count with: 1931077
+Global cycle Count without: 449630
+I receive: 2.070000
+***instruction_count: 509
+Global cycle Count with: 1960500
+Global cycle Count without: 462149
+
+
+***instruction_count: 33
+Global cycle Count with: 87045
+Global cycle Count without: 16598
+I receive: 5.700000
+***instruction_count: 66
+Global cycle Count with: 725041
+Global cycle Count without: 307923
+I receive: 19.260000
+***instruction_count: 99
+Global cycle Count with: 749305
+Global cycle Count without: 320128
+I receive: 11.200000
+***instruction_count: 132
+Global cycle Count with: 890804
+Global cycle Count without: 332018
+I receive: 25.080000
+***instruction_count: 185
+Global cycle Count with: 1029899
+Global cycle Count without: 347525
+I receive: 25.740000
+***instruction_count: 238
+Global cycle Count with: 1164795
+Global cycle Count without: 363662
+I receive: 13.759999
+***instruction_count: 271
+Global cycle Count with: 1302624
+Global cycle Count without: 375237
+I receive: 42.320000
+***instruction_count: 324
+Global cycle Count with: 1441699
+Global cycle Count without: 391374
+I receive: 16.219999
+***instruction_count: 357
+Global cycle Count with: 1578615
+Global cycle Count without: 402949
+I receive: 17.549999
+***instruction_count: 390
+Global cycle Count with: 1719467
+Global cycle Count without: 414839
+I receive: 27.939999
+***instruction_count: 443
+Global cycle Count with: 1847807
+Global cycle Count without: 431291
+I receive: 15.589999
+***instruction_count: 476
+Global cycle Count with: 1978365
+Global cycle Count without: 443181
+I receive: 2.000000
+***instruction_count: 509
+Global cycle Count with: 2120484
+Global cycle Count without: 455071
+
+***instruction_count: 33
+Global cycle Count with: 79267
+Global cycle Count without: 16176
+I receive: 5.700000
+***instruction_count: 66
+Global cycle Count with: 565546
+Global cycle Count without: 260690
+I receive: 19.260000
+***instruction_count: 99
+Global cycle Count with: 589424
+Global cycle Count without: 272580
+I receive: 11.200000
+***instruction_count: 132
+Global cycle Count with: 730544
+Global cycle Count without: 284470
+I receive: 25.080000
+***instruction_count: 185
+Global cycle Count with: 869283
+Global cycle Count without: 299977
+I receive: 25.740000
+***instruction_count: 238
+Global cycle Count with: 1004473
+Global cycle Count without: 316114
+I receive: 13.759999
+***instruction_count: 271
+Global cycle Count with: 1142485
+Global cycle Count without: 327689
+I receive: 42.320000
+***instruction_count: 324
+Global cycle Count with: 1280903
+Global cycle Count without: 343826
+I receive: 16.219999
+***instruction_count: 357
+Global cycle Count with: 1417471
+Global cycle Count without: 355401
+I receive: 17.549999
+***instruction_count: 390
+Global cycle Count with: 1558498
+Global cycle Count without: 367291
+I receive: 27.939999
+***instruction_count: 443
+Global cycle Count with: 1679447
+Global cycle Count without: 383428
+I receive: 15.589999
+***instruction_count: 476
+Global cycle Count with: 1811414
+Global cycle Count without: 395633
+I receive: 2.060000
+***instruction_count: 509
+Global cycle Count with: 1845419
+Global cycle Count without: 410335
+
+
+
+***instruction_count: 33
+Global cycle Count with: 75082
+Global cycle Count without: 16550
+I receive: 5.700000
+***instruction_count: 66
+Global cycle Count with: 775549
+Global cycle Count without: 293688
+I receive: 19.260000
+***instruction_count: 99
+Global cycle Count with: 799338
+Global cycle Count without: 305578
+I receive: 11.200000
+***instruction_count: 132
+Global cycle Count with: 941995
+Global cycle Count without: 317468
+I receive: 25.080000
+***instruction_count: 185
+Global cycle Count with: 1081996
+Global cycle Count without: 332975
+I receive: 25.740000
+***instruction_count: 238
+Global cycle Count with: 1217713
+Global cycle Count without: 349112
+I receive: 13.759999
+***instruction_count: 271
+Global cycle Count with: 1356257
+Global cycle Count without: 360687
+I receive: 42.320000
+***instruction_count: 324
+Global cycle Count with: 1492363
+Global cycle Count without: 376824
+I receive: 16.219999
+***instruction_count: 357
+Global cycle Count with: 1628958
+Global cycle Count without: 388399
+I receive: 17.549999
+***instruction_count: 390
+Global cycle Count with: 1770407
+Global cycle Count without: 400289
+I receive: 27.939999
+***instruction_count: 443
+Global cycle Count with: 1892408
+Global cycle Count without: 416741
+I receive: 15.589999
+***instruction_count: 476
+Global cycle Count with: 2024998
+Global cycle Count without: 428946
+I receive: 2.000000
+***instruction_count: 509
+Global cycle Count with: 2166963
+Global cycle Count without: 440836
+
+

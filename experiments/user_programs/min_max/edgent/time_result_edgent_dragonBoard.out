@@ -1,0 +1,112 @@
+=====================
+inputsize
+../../user_input/16.in
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:40:54 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.514s
+user	0m2.480s
+sys	0m0.112s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:00 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.494s
+user	0m2.456s
+sys	0m0.116s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:06 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.509s
+user	0m2.456s
+sys	0m0.132s
+=====================
+inputsize
+../../user_input/256.in
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:12 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.622s
+user	0m2.508s
+sys	0m0.320s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:17 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.472s
+user	0m2.508s
+sys	0m0.128s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:23 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.495s
+user	0m2.552s
+sys	0m0.120s
+=====================
+inputsize
+../../user_input/4096.in
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:29 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.496s
+user	0m3.612s
+sys	0m0.172s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:35 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.503s
+user	0m3.612s
+sys	0m0.156s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:41 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.475s
+user	0m3.604s
+sys	0m0.136s
+=====================
+inputsize
+../../user_input/65536.in
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:47 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.626s
+user	0m5.976s
+sys	0m0.208s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:53 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.623s
+user	0m5.984s
+sys	0m0.148s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Jun 26, 2017 1:41:59 AM org.apache.edgent.runtime.etiao.Executable$1 accept
+INFO: No more active user tasks
+
+real	0m2.569s
+user	0m5.864s
+sys	0m0.176s

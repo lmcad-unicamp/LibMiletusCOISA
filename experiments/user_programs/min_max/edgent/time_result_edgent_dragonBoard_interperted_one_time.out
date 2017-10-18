@@ -1,0 +1,16 @@
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.496s
+user	0m1.424s
+sys	0m0.088s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.646s
+user	0m1.584s
+sys	0m0.076s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.596s
+user	0m1.548s
+sys	0m0.064s

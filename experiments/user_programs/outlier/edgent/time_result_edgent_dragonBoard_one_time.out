@@ -1,0 +1,134 @@
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+=====================
+WindowSize
+4
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.572s
+user	0m2.640s
+sys	0m0.128s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.636s
+user	0m2.656s
+sys	0m0.188s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.652s
+user	0m2.732s
+sys	0m0.132s
+=====================
+WindowSize
+8
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.610s
+user	0m2.688s
+sys	0m0.116s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.614s
+user	0m2.660s
+sys	0m0.152s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.667s
+user	0m2.744s
+sys	0m0.164s
+=====================
+WindowSize
+16
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.646s
+user	0m2.648s
+sys	0m0.176s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.573s
+user	0m2.628s
+sys	0m0.132s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.591s
+user	0m2.684s
+sys	0m0.120s
+=====================
+WindowSize
+32
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.636s
+user	0m2.708s
+sys	0m0.132s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.606s
+user	0m2.680s
+sys	0m0.104s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.614s
+user	0m2.712s
+sys	0m0.136s
+=====================
+WindowSize
+64
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.547s
+user	0m2.608s
+sys	0m0.132s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.619s
+user	0m2.712s
+sys	0m0.144s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.667s
+user	0m2.716s
+sys	0m0.172s
+=====================
+WindowSize
+128
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.663s
+user	0m2.752s
+sys	0m0.156s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.627s
+user	0m2.732s
+sys	0m0.124s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.648s
+user	0m2.664s
+sys	0m0.160s
+=====================
+WindowSize
+256
+=====================
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.620s
+user	0m2.636s
+sys	0m0.164s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.662s
+user	0m2.768s
+sys	0m0.136s
+Picked up JAVA_TOOL_OPTIONS: -Dgnu.io.rxtx.SerialPorts=/dev/tty96B0
+
+real	0m1.671s
+user	0m2.752s
+sys	0m0.124s

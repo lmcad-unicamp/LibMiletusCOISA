@@ -1,0 +1,27 @@
+<version>
+    1.0
+</version>
+
+<headers>
+    {RELPATH}
+</headers>
+
+<libs>
+    {RELPATH}/linux/bin/
+</libs>
+
+<libs_depend>
+    {RELPATH}/linux/bin/sharedlibrary.so
+</libs_depend>
+
+<skip_headers>
+    {RELPATH}/b64/
+    {RELPATH}/linux/third-party/ArduinoJson/
+    {RELPATH}/esp8266_ble.h
+    {RELPATH}/esp8266_provider.h
+    {RELPATH}/esp8266_wifi.h
+</skip_headers>
+
+<gcc_options>
+    -DBUFFERSIZE=16777216
+</gcc_options>

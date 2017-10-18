@@ -1,0 +1,52 @@
+Syscall & Halcall Info:
+
+This info is used into the switches on the hal and the thing library
+
+Syscalls:
+	10: Exit
+	11: System Startup
+	12: Hal Call
+	13: Init EH
+	14: Register EV
+	15: Remove EV
+	16: Communication Call (Weave)
+
+Halcalls:
+	US_S
+	0: Ultrasonic Read
+	1: Ultrasonic Configure
+	2: Ultrasonic Init///////
+	
+	ENCD
+	5: Read encoder count
+	6: Read encoder time between "holes"
+	7: Start encoder
+	
+	RXTX
+	10:Serial send byte
+	11:Serial read byte
+	12:Serial configure 
+	13:Print Number
+	14:Print String
+	22: Print int32
+	23: Print float
+	24: Print string
+	
+	MOVM
+	15:Go ahead
+	16:Turn Right
+	17:Turn Left
+	18:Setup
+	
+	PWMG
+	20:PWM generator
+	
+	BTOG
+	21:Init Button
+	
+	TIMR - TODO
+
+Communication Call:
+	2: Turn on the light
+	3: Turn off the light
+	4: On led turned on 

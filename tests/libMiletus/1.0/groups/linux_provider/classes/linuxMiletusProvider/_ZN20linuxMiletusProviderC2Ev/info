@@ -1,0 +1,5 @@
+Library: libMiletus-1.0
+Interface: linuxMiletusProvider::linuxMiletusProvider [not-in-charge] ()
+Symbol: _ZN20linuxMiletusProviderC2Ev
+Short Name: linuxMiletusProvider
+Header: linux/linux_provider.h

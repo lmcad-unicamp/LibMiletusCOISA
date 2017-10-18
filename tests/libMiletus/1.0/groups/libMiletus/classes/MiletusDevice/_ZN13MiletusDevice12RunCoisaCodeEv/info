@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: MiletusDevice::RunCoisaCode ()
+Symbol: _ZN13MiletusDevice12RunCoisaCodeEv
+Short Name: RunCoisaCode
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

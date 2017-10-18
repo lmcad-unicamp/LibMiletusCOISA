@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: Command::getJson ()
+Symbol: _ZN7Command7getJsonEv
+Short Name: getJson
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

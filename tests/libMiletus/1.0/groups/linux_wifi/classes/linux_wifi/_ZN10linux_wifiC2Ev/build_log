@@ -1,0 +1,19 @@
+In file included from /home/flavia/Arduino/libraries/libMiletusCoisa/linux/linux_wifi.h:30:0,
+                 from test.cpp:1:
+/home/flavia/Arduino/libraries/libMiletusCoisa/linux/linux_wrapper.h:57:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     int current_status = 0;
+                          ^
+In file included from test.cpp:1:0:
+/home/flavia/Arduino/libraries/libMiletusCoisa/linux/linux_wifi.h:51:37: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   LinuxServer server{TCP_SERVER_PROT};
+                                     ^
+/home/flavia/Arduino/libraries/libMiletusCoisa/linux/linux_wifi.h:51:21: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   LinuxServer server{TCP_SERVER_PROT};
+                     ^
+/home/flavia/Arduino/libraries/libMiletusCoisa/linux/linux_wifi.h:51:37: warning: extended initializer lists only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   LinuxServer server{TCP_SERVER_PROT};
+                                     ^
+test.cpp: In function ‘int main(int, char**)’:
+test.cpp:23:26: warning: unused variable ‘obj’ [-Wunused-variable]
+     linux_wifi_SubClass* obj = new linux_wifi_SubClass(); //target call
+                          ^

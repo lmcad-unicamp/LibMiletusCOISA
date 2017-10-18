@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: LinuxServer::begin ()
+Symbol: _ZN11LinuxServer5beginEv
+Short Name: begin
+Header: linux/linux_wrapper.h
+Shared Object: sharedlibrary.so

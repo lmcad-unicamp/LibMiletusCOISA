@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: enable_commands ()
+Symbol: _Z15enable_commandsv
+Short Name: enable_commands
+Header: coisa/serial.h
+Shared Object: sharedlibrary.so

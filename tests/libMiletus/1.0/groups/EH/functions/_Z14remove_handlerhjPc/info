@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: remove_handler (uint8_t event_id, uint32_t handler, char* evname)
+Symbol: _Z14remove_handlerhjPc
+Short Name: remove_handler
+Header: coisa/EH.h
+Shared Object: sharedlibrary.so

@@ -1,0 +1,155 @@
+FIX_IO_CONTENT:
+    - This constant defines whether the server:
+        - Will NOT redirect its input and output to a file (FIX_IO_CONTENT = 0) or
+        - Will redirect its input and output to a file (FIX_IO_CONTENT = 1).
+
+    - Only stdin and stdout are redirected. Any text on stderr will be printed on the terminal.
+
+    - The default is 0, so executing the linux/build.sh script with no arguments will NOT redirect the IO.
+
+    - Executing linux/build.sh 1 will redirect the IO.
+
+    - The FIX_IO_CONTENT constant is defined in libMiletus.h.
+
+    - Fixing the IO content can be used to define certain values for the input and then check if the output is the expected one.
+
+linux/send_coisa.py:
+    - This script has 4 execution options:
+        - python send_coisa.py Your_Binary_File
+            - The server must be compiled with FIX_IO_CONTENT = 0.
+            - This option is used to send programs to a server that is running on the localhost.
+            - This option is only used when the server is running on a device that has an OS (i.e., not ESP8266).
+            - Before executing the script, start the server on the local device:
+                - Linux: linux/bin/linux_example_wifi
+
+        - python send_coisa.py Your_Binary_File Desired_IP
+            - The server must be compiled with FIX_IO_CONTENT = 0.
+            - This option is used to send programs to a server that is running on a different host, defined by Desired_IP.
+            - This option can be used on devices that are not running an OS (i.e., both Linux systems and ESP8266).
+            - Before executing the script, start the server on the desired device:
+                - Linux: linux/bin/linux_example_wifi
+                - ESP8266: examples/example_libMiletus_esp_wifi/example_libMiletus_esp_wifi.pde
+
+        - python send_coisa.py Your_Binary_File Input_File Output_File
+            - The server must be compiled with FIX_IO_CONTENT = 1.
+            - This option is used to send programs to a server that is running on the localhost.
+            - This option is only used when the server is running on a device that has an OS (i.e., not ESP8266).
+            - You DO NOT need to start the server before executing the script.
+              The script will start a process running linux/bin/linux_example_wifi.
+
+        - python send_coisa.py Your_Binary_File Input_File Output_File Desired_IP
+            - The server must be compiled with FIX_IO_CONTENT = 1.
+            - This option is used to send programs to a server that is running on a different host, defined by Desired_IP.
+            - This option is only used when the server is running on a device that has an OS (i.e., not ESP8266).
+            - Before executing the script, start the server on the desired device:
+                - Linux: linux/bin/linux_example_wifi
+
+user_programs/min_max/edgent/compile.sh,
+user_programs/outlier/edgent/compile.sh,
+user_programs/fft/edgent/compile.sh:
+    - Deletes all .class files from the folder.
+
+    - Compiles all .java files in the folder.
+
+    - The classpath is defined in the compile_run_check.sh script and is passed as an argument to compile.sh.
+
+user_programs/min_max/edgent/compile_run_check.sh,
+user_programs/outlier/edgent/compile_run_check.sh,
+user_programs/fft/edgent/compile_run_check.sh:
+    - Calls compile.sh with the correct argument.
+
+    - Deletes the output file(s) corresponding to the test(s) that will be executed from the user_programs/<test>/edgent/out folder.
+
+    - Executes the test(s) with the correct arguments.
+      The input file is in the user_programs/<test>/in folder.
+      The execution ouput is stored in the user_programs/<test>/edgent/out folder.
+
+    - Compares the test output with the expected output that is in the user_programs/<test>/gold folder.
+      Prints the test number and the diff output. An empty diff output means that the test produced the expected result.
+
+    - Expects an argument:
+        - a number from 1 to 10 for min_max/outlier and 1 to 2 for fft: does the above steps for a specific test OR
+        - all: does the above steps for all tests.
+
+user_programs/min_max/lmc/check.sh,
+user_programs/outlier/lmc/check.sh,
+user_programs/fft/lmc/check.sh:
+    - Compares the output that is in the user_programs/<test>/lmc/out folder with the expected output that is in the user_programs/<test>/gold folder.
+
+    - Prints the test number and the diff output. An empty diff output means that the test produced the expected result.
+
+    - Expects an argument:
+        - a number from 1 to 10 for min_max/outlier and 1 to 2 for fft: does the above steps for a specific test OR
+        - all: does the above steps for all tests.
+
+user_programs/min_max/lmc/compile.sh,
+user_programs/outlier/lmc/compile.sh,
+user_programs/fft/lmc/compile.sh:
+    - Deletes all .o .s .x .bin files from the folder.
+
+    - Compiles the <test>.c file that is in the folder, creating new .o, .s, .x, and .bin files.
+
+    - Expects arguments:
+        - min_max: 3 arguments - MIN, MAX, QUERY_TYPE    (check user_programs/min_max/lmc/min_max.c for more information).
+        - outlier: 2 arguments - WINDOW_SIZE, QUERY_TYPE (check user_programs/outlier/lmc/outlier.c for more information).
+        - fft    : 2 arguments - WINDOW_SIZE, QUERY_TYPE (check user_programs/fft/lmc/fft.c for more information).
+
+user_programs/min_max/lmc/compile_run_check.sh,
+user_programs/outlier/lmc/compile_run_check.sh,
+user_programs/fft/lmc/compile_run_check.sh:
+    - Calls compile.sh with the correct arguments.
+
+    - Deletes the output file(s) corresponding to the test(s) that will be executed from the user_programs/<test>/lmc/out folder.
+
+    - Calls the linux/send_coisa.py script with the following arguments:
+        - The user_programs/<test>/lmc/<test>.x binary file created by the compilation process.
+        - The name of the input file that is in the user_programs/<test>/in folder.
+        - The name of the output file that will be stored in the user_programs/<test>/lmc/out folder.
+        - Optionally, the IP of the device where the server is being executed.
+
+    - Calls check.sh with the correct arguments.
+
+    - Expects an argument:
+        - a number from 1 to 10 for min_max/outlier and 1 to 2 for fft: does the above steps for a specific test OR
+        - all: does the above steps for all tests.
+
+        - OPTIONAL: the IP of the device where the server is being executed (to be passed to the linux/send_coisa.py script).
+
+user_programs/min_max/lmc/run_check.sh,
+user_programs/outlier/lmc/run_check.sh,
+user_programs/fft/lmc/run_check.sh:
+    - Deletes the output file(s) corresponding to the test(s) that will be executed from the user_programs/<test>/lmc/out folder.
+
+    - Calls the linux/send_coisa.py script with the following arguments:
+        - The appropriate binary that is in the user_programs/<test>/lmc/x folder.
+        - The name of the input file that is in the user_programs/<test>/in folder.
+        - The name of the output file that will be stored in the user_programs/<test>/lmc/out folder.
+        - Optionally, the IP of the device where the server is being executed.
+
+    - Calls check.sh with the correct arguments.
+
+    - Expects an argument:
+        - a number from 1 to 10 for min_max/outlier and 1 to 2 for fft: does the above steps for a specific test OR
+        - all: does the above steps for all tests.
+
+        - OPTIONAL: the IP of the device where the server is being executed (to be passed to the linux/send_coisa.py script).
+
+user_programs/min_max/lmc/run_check-raspberry_pi.sh,
+user_programs/outlier/lmc/run_check-raspberry_pi.sh,
+user_programs/fft/lmc/run_check-raspberry_pi.sh:
+    - OBS.: In the Raspberry Pi device, there is a clone of this repository (/home/pi/libMiletusCoisa).
+
+    - Remotely deletes the output file corresponding to the test that will be executed from the /home/pi/libMiletusCoisa/user_programs/<test>/lmc/out folder.
+
+    - Calls the linux/send_coisa.py script with the following arguments:
+        - The appropriate binary that is in the user_programs/<test>/lmc/x folder.
+        - The name of the input file that is in the /home/pi/libMiletusCoisa/user_programs/<test>/in folder.
+        - The name of the output file that will be stored in the /home/pi/libMiletusCoisa/user_programs/<test>/lmc/out folder.
+        - The IP of the Raspberry Pi device where the server is being executed.
+
+    - Remotely calls /home/pi/libMiletusCoisa/user_programs/<test>/lmc/check.sh with the correct arguments.
+      The output will be printed on the terminal where the run_check-raspberry_pi.sh script is being executed.
+
+    - Expects arguments:
+        - a number from 1 to 10 for min_max/outlier and 1 to 2 for fft: does the above steps for a specific test.
+        - The IP of the Raspberry Pi device where the server is being executed.

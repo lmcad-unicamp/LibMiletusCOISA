@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: advance_pc (int32_t offset)
+Symbol: _Z10advance_pci
+Short Name: advance_pc
+Header: coisa/vm.h
+Shared Object: sharedlibrary.so

@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: Command::getParameter (std::string paramName)
+Symbol: _ZN7Command12getParameterESs
+Short Name: getParameter
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

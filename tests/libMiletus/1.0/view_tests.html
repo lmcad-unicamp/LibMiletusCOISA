@@ -1,0 +1,221 @@
+<!-- total:88 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="libMiletus, tests, API" />
+    <meta name="description" content="Test suite for the libMiletus-1.0 library on x86_64" />
+    <title>
+        libMiletus-1.0: Test suite
+    </title>
+    <style type="text/css">
+    body {
+    font-family:Arial;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+}
+span.int {
+    font-weight:bold;
+    cursor:pointer;
+    margin-left:7px;
+    font-family:Arial;
+    color:#003E69;
+}
+span.sym_p {
+    font-weight:normal;
+}
+span:hover.int {
+    color:#336699;
+}
+span.header {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.ns {
+    color:#408080;
+    font-size:0.94em;
+}
+span.lib_name {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.libgroup {
+    color:Black;
+    font-size:0.875em;
+    font-family:Arial;
+    font-weight:bold;
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.attr {
+    color:#333333;
+    font-weight:100;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    color:Red;
+}
+a.link {
+    text-decoration:none;
+}
+.footer {
+    font-size:0.75em;
+}
+    </style>
+    <script type="text/javascript" language="JavaScript">
+    <!--
+    
+    -->
+    </script>
+    </head>
+<body>
+<div><a name='Top'></a>
+<h1>Test suite for the <span style='color:Blue;'>libMiletus</span>-<span style='color:Blue;'>1.0</span> library on <span style='color:Blue;'>x86_64</span></h1>
+<br/>
+<h2>Tests (88)</h2><hr/>
+<span class='header'>comm.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/comm/functions/_Z9comm_calljPc/view.html'><span class='int'>comm_call&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>uint32_t <span class='color_p'>code</span>,</span> <span class='nowrap'>char* <span class='color_p'>parameters</span> )</span></span></span></a><br/>
+<a class='link' href='groups/comm/functions/_Z21execute_weave_commandPcS_/view.html'><span class='int'>execute_weave_command&nbsp;<span class='sym_p'>(&#160;char* <span class='color_p'>traitCommand</span>, <span class='nowrap'>char* <span class='color_p'>parameters</span> )</span></span></span></a><br/>
+<br/>
+<span class='header'>EH.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/EH/functions/_Z13consume_eventv/view.html'><span class='int'>consume_event&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/EH/functions/_Z7eh_initv/view.html'><span class='int'>eh_init&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/EH/functions/_Z11event_timerv/view.html'><span class='int'>event_timer&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/EH/functions/_Z12insert_eventhPc/view.html'><span class='int'>insert_event&nbsp;<span class='sym_p'>(&#160;uint8_t <span class='color_p'>event_id</span>, <span class='nowrap'>char* <span class='color_p'>evname</span> )</span></span></span></a><br/>
+<a class='link' href='groups/EH/functions/_Z16register_handlerhjPcPvh/view.html'><span class='int'>register_handler&nbsp;<span class='sym_p'>(&#160;uint8_t <span class='color_p'>event_id</span>, uint32_t <span class='color_p'>handler</span>, <span class='nowrap'>char* <span class='color_p'>evname</span>,</span> <span class='nowrap'>void* <span class='color_p'>argv</span>,</span> <span class='nowrap'>uint8_t <span class='color_p'>argc</span> )</span></span></span></a><br/>
+<a class='link' href='groups/EH/functions/_Z14remove_handlerhjPc/view.html'><span class='int'>remove_handler&nbsp;<span class='sym_p'>(&#160;uint8_t <span class='color_p'>event_id</span>, uint32_t <span class='color_p'>handler</span>, <span class='nowrap'>char* <span class='color_p'>evname</span> )</span></span></span></a><br/>
+<a class='link' href='groups/EH/functions/_Z13timed_pollingv/view.html'><span class='int'>timed_polling&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<br/>
+<span class='header'>HAL.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/HAL/functions/_Z8hal_calljPc/view.html'><span class='int'>hal_call&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>uint32_t <span class='color_p'>sensid</span>,</span> <span class='nowrap'>char* <span class='color_p'>identifier</span> )</span></span></span></a><br/>
+<br/>
+<span class='header'>libMiletus.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command5abortESs/view.html'><span class='int'>Command::abort&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>error</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command12appendResultESsN11ArduinoJson11JsonVariantE/view.html'><span class='int'>Command::appendResult&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>key</span>,</span> <span class='nowrap'>ArduinoJson::JsonVariant <span class='color_p'>value</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command15createJsonErrorESs/view.html'><span class='int'>Command::createJsonError&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>error</span> )</span></span> <span class='attr'>[static]</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command18createJsonResponseEv/view.html'><span class='int'>Command::createJsonResponse&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command17createJsonSuccessEv/view.html'><span class='int'>Command::createJsonSuccess&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command7getJsonEv/view.html'><span class='int'>Command::getJson&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command12getParameterESs/view.html'><span class='int'>Command::getParameter&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>paramName</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command11getResponseEv/view.html'><span class='int'>Command::getResponse&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command3runEv/view.html'><span class='int'>Command::run&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command18setParentComponentEP9Component/view.html'><span class='int'>Command::setParentComponent&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>Component* <span class='color_p'>component</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7Command15setUserFunctionEPFbRS_E/view.html'><span class='int'>Command::setUserFunction&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>bool(*<span class='color_p'>f</span>)(Command&amp;) )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Component/_ZN9Component8addTraitEPKcPN11ArduinoJson10JsonObjectE/view.html'><span class='int'>Component::addTrait&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>trait</span>, <span class='nowrap'>ArduinoJson::JsonObject* <span class='color_p'>jsonTraits</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Component/_ZN9Component7getJsonEv/view.html'><span class='int'>Component::getJson&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Component/_ZN9Component8getStateEPKcS1_/view.html'><span class='int'>Component::getState&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>trait</span>, <span class='nowrap'>char const* <span class='color_p'>state</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Component/_ZN9Component10setCommandEPKcS1_PFbR7CommandE/view.html'><span class='int'>Component::setCommand&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>trait</span>, <span class='nowrap'>char const* <span class='color_p'>cmd</span>,</span> <span class='nowrap'>bool(*<span class='color_p'>f</span>)(Command&amp;) )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Component/_ZN9Component8setStateEPKcS1_N11ArduinoJson11JsonVariantE/view.html'><span class='int'>Component::setState&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>trait</span>, char const* <span class='color_p'>state</span>, <span class='nowrap'>ArduinoJson::JsonVariant <span class='color_p'>value</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Component/_ZN9Component16setStateCallbackEPKcS1_PFbvE/view.html'><span class='int'>Component::setStateCallback&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>trait</span>, char const* <span class='color_p'>state</span>, <span class='nowrap'>bool(*<span class='color_p'>f</span>)() )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice16addCommInterfaceEP19MiletusDeviceCommIfb/view.html'><span class='int'>MiletusDevice::addCommInterface&nbsp;<span class='sym_p'>(&#160;MiletusDeviceCommIf* <span class='color_p'>comm_if</span>, <span class='nowrap'>bool <span class='color_p'>def</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice10createInfoESs/view.html'><span class='int'>MiletusDevice::createInfo&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>name</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice10dumpTraitsEv/view.html'><span class='int'>MiletusDevice::dumpTraits&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice14executeCommandESs/view.html'><span class='int'>MiletusDevice::executeCommand&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>jsonCommand</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice16getComponentListEv/view.html'><span class='int'>MiletusDevice::getComponentList&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice17getComponentsJsonEv/view.html'><span class='int'>MiletusDevice::getComponentsJson&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice12handleEventsEv/view.html'><span class='int'>MiletusDevice::handleEvents&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice16InstallCoisaCodeER7Command/view.html'><span class='int'>MiletusDevice::InstallCoisaCode&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>Command&amp; <span class='color_p'>command</span> )</span></span> <span class='attr'>[static]</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice14loadJsonTraitsEPKc/view.html'><span class='int'>MiletusDevice::loadJsonTraits&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>char const* <span class='color_p'>json</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDeviceC1ESs/view.html'><span class='int'>MiletusDevice::MiletusDevice <span class='attr'>[in-charge]</span>&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>name</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDeviceC2ESs/view.html'><span class='int'>MiletusDevice::MiletusDevice <span class='attr'>[not-in-charge]</span>&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>name</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice14processRequestEP8RequestT/view.html'><span class='int'>MiletusDevice::processRequest&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>struct RequestT* <span class='color_p'>request</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice12RunCoisaCodeEv/view.html'><span class='int'>MiletusDevice::RunCoisaCode&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice11setProviderEP15MiletusProvider/view.html'><span class='int'>MiletusDevice::setProvider&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>MiletusProvider* <span class='color_p'>p</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice8setStateEPKcS1_S1_N11ArduinoJson11JsonVariantE/view.html'><span class='int'>MiletusDevice::setState&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>componentName</span>, char const* <span class='color_p'>traitName</span>, char const* <span class='color_p'>stateName</span>, <span class='nowrap'>ArduinoJson::JsonVariant <span class='color_p'>value</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/MiletusDevice/_ZN13MiletusDevice16setStateCallbackEPKcS1_S1_PFbvE/view.html'><span class='int'>MiletusDevice::setStateCallback&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>componentName</span>, char const* <span class='color_p'>traitName</span>, char const* <span class='color_p'>stateName</span>, <span class='nowrap'>bool(*<span class='color_p'>f</span>)() )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/State/_ZN5State7getJsonEv/view.html'><span class='int'>State::getJson&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/State/_ZN5State18setParentComponentEP9Component/view.html'><span class='int'>State::setParentComponent&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>Component* <span class='color_p'>component</span> )</span></span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Trait/_ZN5Trait7getJsonEv/view.html'><span class='int'>Trait::getJson&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Type/_ZN4Type15getTypeFromCharEPKc/view.html'><span class='int'>Type::getTypeFromChar&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>char const* <span class='color_p'>type</span> )</span></span> <span class='attr'>[static]</span></span></a><br/>
+<br/>
+<span class='header'>linux_provider.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/linux_provider/classes/linuxMiletusProvider/_ZN20linuxMiletusProvider7getRandEv/view.html'><span class='int'>linuxMiletusProvider::getRand&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_provider/classes/linuxMiletusProvider/_ZN20linuxMiletusProvider8printdbgESs/view.html'><span class='int'>linuxMiletusProvider::printdbg&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>msg</span> )</span></span></span></a><br/>
+<a class='link' href='groups/linux_provider/classes/linuxMiletusProvider/_ZN20linuxMiletusProvider13printFreeHeapEv/view.html'><span class='int'>linuxMiletusProvider::printFreeHeap&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<br/>
+<span class='header'>linux_wifi.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/linux_wifi/classes/linux_wifi/_ZN10linux_wifi11handleEventEP8RequestT/view.html'><span class='int'>linux_wifi::handleEvent&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>struct RequestT* <span class='color_p'>p1</span> )</span></span></span></a><br/>
+<a class='link' href='groups/linux_wifi/classes/linux_wifi/_ZN10linux_wifiC2Ev/view.html'><span class='int'>linux_wifi::linux_wifi <span class='attr'>[not-in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_wifi/classes/linux_wifi/_ZN10linux_wifi17sendErrorToClientEv/view.html'><span class='int'>linux_wifi::sendErrorToClient&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_wifi/classes/linux_wifi/_ZN10linux_wifi16sendJsonToClientESs/view.html'><span class='int'>linux_wifi::sendJsonToClient&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>json</span> )</span></span></span></a><br/>
+<br/>
+<span class='header'>linux_wrapper.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxClient/_ZN11LinuxClient9availableEv/view.html'><span class='int'>LinuxClient::available&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxClient/_ZN11LinuxClient14extractHTTPCmdESs/view.html'><span class='int'>LinuxClient::extractHTTPCmd&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>msg</span> )</span></span></span></a><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxClient/_ZN11LinuxClient5flushEv/view.html'><span class='int'>LinuxClient::flush&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxClient/_ZN11LinuxClient5printESs/view.html'><span class='int'>LinuxClient::print&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>msg</span> )</span></span></span></a><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxClient/_ZN11LinuxClient10readStringEv/view.html'><span class='int'>LinuxClient::readString&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxClient/_ZN11LinuxClient4stopEv/view.html'><span class='int'>LinuxClient::stop&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxServer/_ZN11LinuxServer9availableEv/view.html'><span class='int'>LinuxServer::available&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxServer/_ZN11LinuxServer5beginEv/view.html'><span class='int'>LinuxServer::begin&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxServer/_ZN11LinuxServer6statusEv/view.html'><span class='int'>LinuxServer::status&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_wrapper/classes/LinuxServer/_ZN11LinuxServer4stopEv/view.html'><span class='int'>LinuxServer::stop&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<br/>
+<span class='header'>serial.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/serial/functions/_Z15enable_commandsv/view.html'><span class='int'>enable_commands&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/serial/functions/_Z5printPc/view.html'><span class='int'>print&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>char* <span class='color_p'>str</span> )</span></span></span></a><br/>
+<a class='link' href='groups/serial/functions/_Z8printnumi/view.html'><span class='int'>printnum&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>int32_t <span class='color_p'>number</span> )</span></span></span></a><br/>
+<a class='link' href='groups/serial/functions/_Z9read_bytev/view.html'><span class='int'>read_byte&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/serial/functions/_Z9send_byteh/view.html'><span class='int'>send_byte&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>unsigned char <span class='color_p'>byte</span> )</span></span></span></a><br/>
+<a class='link' href='groups/serial/functions/_Z16serial_configurej/view.html'><span class='int'>serial_configure&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>unsigned int <span class='color_p'>baudrate</span> )</span></span></span></a><br/>
+<br/>
+<span class='header'>syscall.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/syscall/functions/_Z7syscallh/view.html'><span class='int'>syscall&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>uint8_t <span class='color_p'>trap_code</span> )</span></span></span></a><br/>
+<br/>
+<span class='header'>TM.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/TM/classes/ThingMonitor/_ZN12ThingMonitor11ExecuteStepEv/view.html'><span class='int'>ThingMonitor::ExecuteStep&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/TM/classes/ThingMonitor/_ZN12ThingMonitor11InstallCodeERKSs/view.html'><span class='int'>ThingMonitor::InstallCode&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string const&amp; <span class='color_p'>fileB64Encoded</span> )</span></span></span></a><br/>
+<a class='link' href='groups/TM/classes/ThingMonitor/_ZN12ThingMonitor8ResetingEv/view.html'><span class='int'>ThingMonitor::Reseting&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/TM/classes/ThingMonitor/_ZN12ThingMonitor7RunCodeEv/view.html'><span class='int'>ThingMonitor::RunCode&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/TM/classes/ThingMonitor/_ZN12ThingMonitorC1Ev/view.html'><span class='int'>ThingMonitor::ThingMonitor <span class='attr'>[in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/TM/classes/ThingMonitor/_ZN12ThingMonitorC2Ev/view.html'><span class='int'>ThingMonitor::ThingMonitor <span class='attr'>[not-in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<br/>
+<span class='header'>vm.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<a class='link' href='groups/vm/functions/_Z10advance_pci/view.html'><span class='int'>advance_pc&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>int32_t <span class='color_p'>offset</span> )</span></span></span></a><br/>
+<a class='link' href='groups/vm/functions/_Z5fetchj/view.html'><span class='int'>fetch&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>uint32_t <span class='color_p'>PC</span> )</span></span></span></a><br/>
+<a class='link' href='groups/vm/functions/_Z6vm_cpuv/view.html'><span class='int'>vm_cpu&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/vm/functions/_Z7vm_initj/view.html'><span class='int'>vm_init&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>uint32_t <span class='color_p'>newPC</span> )</span></span></span></a><br/>
+<br/>
+<span class='header'>libMiletus.h</span><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7CommandC1Ev/view.html'><span class='int'>Command::Command <span class='attr'>[in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Command/_ZN7CommandC2Ev/view.html'><span class='int'>Command::Command <span class='attr'>[not-in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Component/_ZN9ComponentC1Ev/view.html'><span class='int'>Component::Component <span class='attr'>[in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/libMiletus/classes/Component/_ZN9ComponentC2Ev/view.html'><span class='int'>Component::Component <span class='attr'>[not-in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<br/>
+<span class='header'>linux_provider.h</span><br/>
+<a class='link' href='groups/linux_provider/classes/linuxMiletusProvider/_ZN20linuxMiletusProviderC1Ev/view.html'><span class='int'>linuxMiletusProvider::linuxMiletusProvider <span class='attr'>[in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<a class='link' href='groups/linux_provider/classes/linuxMiletusProvider/_ZN20linuxMiletusProviderC2Ev/view.html'><span class='int'>linuxMiletusProvider::linuxMiletusProvider <span class='attr'>[not-in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<br/>
+<span class='header'>linux_wifi.h</span><br/>
+<a class='link' href='groups/linux_wifi/classes/linux_wifi/_ZN10linux_wifiD2Ev/view.html'><span class='int'>linux_wifi::~linux_wifi <span class='attr'>[not-in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span></a><br/>
+<br/>
+<a style='font-size:11px;' href='#Top'>to the top</a><br/>
+</div>
+<br/><br/><hr/><div class='footer' align='right'><i>Generated on Sat May 13 13:21:32 2017 by <a href='https://github.com/lvc/api-sanity-checker'>API Sanity Checker</a> 1.98.8 &#160;</i></div><br/>
+</body></html>

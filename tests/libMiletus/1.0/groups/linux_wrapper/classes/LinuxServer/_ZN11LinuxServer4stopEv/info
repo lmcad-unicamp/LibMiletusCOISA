@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: LinuxServer::stop ()
+Symbol: _ZN11LinuxServer4stopEv
+Short Name: stop
+Header: linux/linux_wrapper.h
+Shared Object: sharedlibrary.so

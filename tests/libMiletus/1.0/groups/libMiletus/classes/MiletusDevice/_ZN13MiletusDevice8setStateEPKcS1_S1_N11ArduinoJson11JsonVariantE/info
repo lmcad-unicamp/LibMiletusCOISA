@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: MiletusDevice::setState (char const* componentName, char const* traitName, char const* stateName, ArduinoJson::JsonVariant value)
+Symbol: _ZN13MiletusDevice8setStateEPKcS1_S1_N11ArduinoJson11JsonVariantE
+Short Name: setState
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

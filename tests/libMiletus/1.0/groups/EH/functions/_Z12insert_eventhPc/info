@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: insert_event (uint8_t event_id, char* evname)
+Symbol: _Z12insert_eventhPc
+Short Name: insert_event
+Header: coisa/EH.h
+Shared Object: sharedlibrary.so

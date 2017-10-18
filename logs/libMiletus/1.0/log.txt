@@ -1,0 +1,82 @@
+Temporary header file '/tmp/yxIZGTJTV5/dump1.h' with the following content will be compiled to create GCC translation unit dump:
+
+  // add includes
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/libMiletus.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/linux/linux_provider.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/linux/linux_wifi.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/linux/linux_wrapper.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/libMiletusCommIf.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/libMiletusProvider.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/coisa/comm.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/coisa/EH.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/coisa/HAL.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/coisa/serial.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/coisa/syscall.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/coisa/TM.h"
+  #include "/home/flavia/Arduino/libraries/libMiletusCoisa/coisa/vm.h"
+
+  // add namespaces
+  namespace ArduinoJson{typedef int tmp_add_type_1;}
+  ArduinoJson::tmp_add_type_1 tmp_add_func_1(){return 0;};
+  namespace ArduinoJson{namespace Internals{typedef int tmp_add_type_2;}}
+  ArduinoJson::Internals::tmp_add_type_2 tmp_add_func_2(){return 0;};
+  namespace ArduinoJson{namespace TypeTraits{typedef int tmp_add_type_3;}}
+  ArduinoJson::TypeTraits::tmp_add_type_3 tmp_add_func_3(){return 0;};
+
+  // add classes
+  Command* tmp_add_class_0;
+  Component* tmp_add_class_1;
+  LinuxClient* tmp_add_class_2;
+  LinuxServer* tmp_add_class_3;
+  MiletusDevice* tmp_add_class_4;
+  MiletusDeviceCommIf* tmp_add_class_5;
+  MiletusProvider* tmp_add_class_6;
+  Parameter* tmp_add_class_7;
+  RequestT* tmp_add_class_8;
+  State* tmp_add_class_9;
+  ThingMonitor* tmp_add_class_10;
+  Trait* tmp_add_class_11;
+  Type* tmp_add_class_12;
+  addrinfo* tmp_add_class_13;
+  cmsghdr* tmp_add_class_14;
+  event* tmp_add_class_15;
+  event_point* tmp_add_class_16;
+  f_owner_ex* tmp_add_class_17;
+  file_handle* tmp_add_class_18;
+  flock64* tmp_add_class_19;
+  gaicb* tmp_add_class_20;
+  group_filter* tmp_add_class_21;
+  group_req* tmp_add_class_22;
+  group_source_req* tmp_add_class_23;
+  hostent* tmp_add_class_24;
+  in6_addr* tmp_add_class_25;
+  in6_pktinfo* tmp_add_class_26;
+  in_addr* tmp_add_class_27;
+  in_pktinfo* tmp_add_class_28;
+  iovec* tmp_add_class_29;
+  ip6_mtuinfo* tmp_add_class_30;
+  ip_mreq* tmp_add_class_31;
+  ip_mreq_source* tmp_add_class_32;
+  ip_mreqn* tmp_add_class_33;
+  ip_msfilter* tmp_add_class_34;
+  ip_opts* tmp_add_class_35;
+  ipv6_mreq* tmp_add_class_36;
+  linger* tmp_add_class_37;
+  linuxMiletusProvider* tmp_add_class_38;
+  linux_wifi* tmp_add_class_39;
+  mmsghdr* tmp_add_class_40;
+  msghdr* tmp_add_class_41;
+  netent* tmp_add_class_42;
+  osockaddr* tmp_add_class_43;
+  protoent* tmp_add_class_44;
+  rpcent* tmp_add_class_45;
+  servent* tmp_add_class_46;
+  sockaddr* tmp_add_class_47;
+  sockaddr_in* tmp_add_class_48;
+  sockaddr_in6* tmp_add_class_49;
+  sockaddr_storage* tmp_add_class_50;
+  ucred* tmp_add_class_51;
+
+The GCC parameters:
+  gcc -fdump-translation-unit -fkeep-inline-functions -c -x c++ -fpermissive -w  -DBUFFERSIZE=16777216 "/tmp/yxIZGTJTV5/dump1.h"  -I/home/flavia/Arduino/libraries/libMiletusCoisa/linux/third-party/ArduinoJson
+

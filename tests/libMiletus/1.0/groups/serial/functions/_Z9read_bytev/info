@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: read_byte ()
+Symbol: _Z9read_bytev
+Short Name: read_byte
+Header: coisa/serial.h
+Shared Object: sharedlibrary.so

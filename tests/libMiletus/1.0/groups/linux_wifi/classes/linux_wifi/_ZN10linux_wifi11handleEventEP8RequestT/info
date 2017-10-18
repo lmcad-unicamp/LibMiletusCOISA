@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: linux_wifi::handleEvent (struct RequestT* p1)
+Symbol: _ZN10linux_wifi11handleEventEP8RequestT
+Short Name: handleEvent
+Header: linux/linux_wifi.h
+Shared Object: sharedlibrary.so

@@ -1,0 +1,4 @@
+In file included from test.cpp:1:0:
+/home/flavia/Arduino/libraries/libMiletusCoisa/linux/linux_wrapper.h:57:26: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+     int current_status = 0;
+                          ^

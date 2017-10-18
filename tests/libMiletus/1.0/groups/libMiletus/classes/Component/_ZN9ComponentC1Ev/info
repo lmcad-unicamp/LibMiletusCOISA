@@ -1,0 +1,5 @@
+Library: libMiletus-1.0
+Interface: Component::Component [in-charge] ()
+Symbol: _ZN9ComponentC1Ev
+Short Name: Component
+Header: libMiletusCoisa/libMiletus.h

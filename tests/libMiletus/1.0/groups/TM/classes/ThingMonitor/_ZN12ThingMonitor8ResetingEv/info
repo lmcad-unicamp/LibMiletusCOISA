@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: ThingMonitor::Reseting ()
+Symbol: _ZN12ThingMonitor8ResetingEv
+Short Name: Reseting
+Header: coisa/TM.h
+Shared Object: sharedlibrary.so

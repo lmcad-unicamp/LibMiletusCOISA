@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: event_timer ()
+Symbol: _Z11event_timerv
+Short Name: event_timer
+Header: coisa/EH.h
+Shared Object: sharedlibrary.so

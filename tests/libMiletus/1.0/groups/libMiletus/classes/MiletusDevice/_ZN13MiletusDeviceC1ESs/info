@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: MiletusDevice::MiletusDevice [in-charge] (std::string name)
+Symbol: _ZN13MiletusDeviceC1ESs
+Short Name: MiletusDevice
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

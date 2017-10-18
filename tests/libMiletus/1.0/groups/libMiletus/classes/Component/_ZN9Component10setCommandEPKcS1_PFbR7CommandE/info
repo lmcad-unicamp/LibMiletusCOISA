@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: Component::setCommand (char const* trait, char const* cmd, bool(*f)(Command&))
+Symbol: _ZN9Component10setCommandEPKcS1_PFbR7CommandE
+Short Name: setCommand
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: ThingMonitor::InstallCode (std::string const& fileB64Encoded)
+Symbol: _ZN12ThingMonitor11InstallCodeERKSs
+Short Name: InstallCode
+Header: coisa/TM.h
+Shared Object: sharedlibrary.so

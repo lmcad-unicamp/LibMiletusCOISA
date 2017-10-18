@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: syscall (uint8_t trap_code)
+Symbol: _Z7syscallh
+Short Name: syscall
+Header: coisa/syscall.h
+Shared Object: sharedlibrary.so

@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: Type::getTypeFromChar (char const* type) [static]
+Symbol: _ZN4Type15getTypeFromCharEPKc
+Short Name: getTypeFromChar
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

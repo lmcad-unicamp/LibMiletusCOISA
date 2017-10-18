@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: LinuxServer::available ()
+Symbol: _ZN11LinuxServer9availableEv
+Short Name: available
+Header: linux/linux_wrapper.h
+Shared Object: sharedlibrary.so

@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: hal_call (uint32_t sensid, char* identifier)
+Symbol: _Z8hal_calljPc
+Short Name: hal_call
+Header: coisa/HAL.h
+Shared Object: sharedlibrary.so

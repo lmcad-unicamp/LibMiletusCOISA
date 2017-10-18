@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: Component::setStateCallback (char const* trait, char const* state, bool(*f)())
+Symbol: _ZN9Component16setStateCallbackEPKcS1_PFbvE
+Short Name: setStateCallback
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

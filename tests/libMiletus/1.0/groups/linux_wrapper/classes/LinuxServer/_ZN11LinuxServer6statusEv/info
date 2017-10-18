@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: LinuxServer::status ()
+Symbol: _ZN11LinuxServer6statusEv
+Short Name: status
+Header: linux/linux_wrapper.h
+Shared Object: sharedlibrary.so

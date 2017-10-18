@@ -1,0 +1,13 @@
+EVEN LENGTH SEQUENCES:
+t01: https://www.mathsisfun.com/data/outliers.html
+t02: http://www.mathsisfun.com/definitions/outlier.html
+t03: http://www.itl.nist.gov/div898/handbook/prc/section1/prc16.htm
+t04: http://www.wikihow.com/Calculate-Outliers
+t05: 6 numbers from each of the t1-t4 tests chosen so the outlier result would be the same
+t06: sequence from 20 to 1 (does not have an outlier)
+
+ODD LENGTH SEQUENCES:
+t07: https://mathspace.co/learn/world-of-maths/univariate-data/identify-outliers-16683/spotting-odd-ones-out-910/
+t08: sequence of multiples of 2 from 0 to 28, almost sorted (does not have an outlier)
+t09: https://www.khanacademy.org/math/ap-statistics/quantitative-data-ap/stats-box-whisker-plots/a/identifying-outliers-iqr-rule
+t10: 15 numbers from each of the t6-t9 tests chosen so the outlier result would be the same

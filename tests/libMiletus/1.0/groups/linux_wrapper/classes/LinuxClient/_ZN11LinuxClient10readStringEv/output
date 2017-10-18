@@ -1,0 +1,4 @@
+Error reading from client
+terminate called after throwing an instance of 'std::logic_error'
+  what():  basic_string::_S_construct null not valid
+Aborted (core dumped)

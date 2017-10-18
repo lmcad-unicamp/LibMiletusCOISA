@@ -1,0 +1,5 @@
+Library: libMiletus-1.0
+Interface: Command::Command [in-charge] ()
+Symbol: _ZN7CommandC1Ev
+Short Name: Command
+Header: libMiletusCoisa/libMiletus.h

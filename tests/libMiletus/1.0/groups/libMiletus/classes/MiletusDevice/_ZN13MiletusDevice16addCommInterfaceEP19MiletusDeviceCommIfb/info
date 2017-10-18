@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: MiletusDevice::addCommInterface (MiletusDeviceCommIf* comm_if, bool def)
+Symbol: _ZN13MiletusDevice16addCommInterfaceEP19MiletusDeviceCommIfb
+Short Name: addCommInterface
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

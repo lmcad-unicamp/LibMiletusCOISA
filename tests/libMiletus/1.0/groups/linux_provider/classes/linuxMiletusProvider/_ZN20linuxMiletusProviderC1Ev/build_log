@@ -1,0 +1,4 @@
+test.cpp: In function ‘int main(int, char**)’:
+test.cpp:4:27: warning: unused variable ‘linuxmiletusprovider’ [-Wunused-variable]
+     linuxMiletusProvider* linuxmiletusprovider = new linuxMiletusProvider(); //target call
+                           ^

@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: consume_event ()
+Symbol: _Z13consume_eventv
+Short Name: consume_event
+Header: coisa/EH.h
+Shared Object: sharedlibrary.so

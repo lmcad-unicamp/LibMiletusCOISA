@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: serial_configure (unsigned int baudrate)
+Symbol: _Z16serial_configurej
+Short Name: serial_configure
+Header: coisa/serial.h
+Shared Object: sharedlibrary.so

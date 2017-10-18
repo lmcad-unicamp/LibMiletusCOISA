@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: linuxMiletusProvider::getRand ()
+Symbol: _ZN20linuxMiletusProvider7getRandEv
+Short Name: getRand
+Header: linux/linux_provider.h
+Shared Object: sharedlibrary.so

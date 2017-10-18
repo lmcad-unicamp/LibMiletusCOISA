@@ -1,0 +1,1160 @@
+4021b418 <_Z6vm_cpuv>:
+4021b418:	9cd521        	l32r	a2, 4020276c <_ZN12ThingMonitorC1Ev+0x18>
+4021b41b:	c0c112        	addi	a1, a1, -64
+4021b41e:	002232        	l32i	a3, a2, 0
+4021b421:	0d61d2        	s32i	a13, a1, 52
+4021b424:	0f6102        	s32i	a0, a1, 60
+4021b427:	e1c9      	s32i.n	a12, a1, 56
+4021b429:	c1e9      	s32i.n	a14, a1, 48
+4021b42b:	b1f9      	s32i.n	a15, a1, 44
+4021b42d:	331b      	addi.n	a3, a3, 1
+4021b42f:	0239      	s32i.n	a3, a2, 0
+4021b431:	b1b9d1        	l32r	a13, 40207b18 <_Z10advance_pci+0x1c>
+4021b434:	9d6421        	l32r	a2, 402029c4 <_GLOBAL__sub_D__Z13base64_encodePKhj+0x30>
+4021b437:	030c      	movi.n	a3, 0
+4021b439:	0239      	s32i.n	a3, a2, 0
+4021b43b:	000d32        	l8ui	a3, a13, 0
+4021b43e:	120c      	movi.n	a2, 1
+4021b440:	138c      	beqz.n	a3, 4021b445 <_Z6vm_cpuv+0x2d>
+4021b442:	02f446        	j	4021c017 <_Z6vm_cpuv+0xbff>
+4021b445:	b1acf1        	l32r	a15, 40207af8 <_Z7syscallh+0xb8>
+4021b448:	0f88      	l32i.n	a8, a15, 0
+4021b44a:	082d      	mov.n	a2, a8
+4021b44c:	4189      	s32i.n	a8, a1, 16
+4021b44e:	ec7005        	call0	40207b50 <_Z5fetchj>
+4021b451:	b1b0c1        	l32r	a12, 40207b14 <_Z10advance_pci+0x18>
+4021b454:	430c      	movi.n	a3, 4
+4021b456:	ffe541        	l32r	a4, 4021b3ec <espconn_pbuf_delete+0x20>
+4021b459:	f59020        	extui	a9, a2, 16, 16
+4021b45c:	117200        	slli	a7, a2, 16
+4021b45f:	0c39      	s32i.n	a3, a12, 0
+4021b461:	da3c      	movi.n	a10, 61
+4021b463:	553a20        	extui	a3, a2, 26, 6
+4021b466:	45e520        	extui	a14, a2, 21, 5
+4021b469:	445090        	extui	a5, a9, 0, 5
+4021b46c:	446b20        	extui	a6, a2, 11, 5
+4021b46f:	317070        	srai	a7, a7, 16
+4021b472:	104240        	and	a4, a2, a4
+4021b475:	4188      	l32i.n	a8, a1, 16
+4021b477:	02ba37        	bgeu	a10, a3, 4021b47d <_Z6vm_cpuv+0x65>
+4021b47a:	02dfc6        	j	4021bffd <_Z6vm_cpuv+0xbe5>
+4021b47d:	ffdca1        	l32r	a10, 4021b3f0 <espconn_pbuf_delete+0x24>
+4021b480:	a0a3a0        	addx4	a10, a3, a10
+4021b483:	0aa8      	l32i.n	a10, a10, 0
+4021b485:	000aa0        	jx	a10
+4021b488:	443620        	extui	a3, a2, 6, 5
+4021b48b:	b42c      	movi.n	a4, 43
+4021b48d:	542020        	extui	a2, a2, 0, 6
+4021b490:	02b427        	bgeu	a4, a2, 4021b496 <_Z6vm_cpuv+0x7e>
+4021b493:	008a86        	j	4021b6c1 <_Z6vm_cpuv+0x2a9>
+4021b496:	ffd741        	l32r	a4, 4021b3f4 <espconn_pbuf_delete+0x28>
+4021b499:	a02240        	addx4	a2, a2, a4
+4021b49c:	0228      	l32i.n	a2, a2, 0
+4021b49e:	0002a0        	jx	a2
+4021b4a1:	9c3121        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b4a4:	a05520        	addx4	a5, a5, a2
+4021b4a7:	0538      	l32i.n	a3, a5, 0
+4021b4a9:	13cc      	bnez.n	a3, 4021b4ae <_Z6vm_cpuv+0x96>
+4021b4ab:	02d7c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b4ae:	000306        	j	4021b4be <_Z6vm_cpuv+0xa6>
+4021b4b1:	9c2d21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b4b4:	a05520        	addx4	a5, a5, a2
+4021b4b7:	0538      	l32i.n	a3, a5, 0
+4021b4b9:	138c      	beqz.n	a3, 4021b4be <_Z6vm_cpuv+0xa6>
+4021b4bb:	02d3c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b4be:	a0ee20        	addx4	a14, a14, a2
+4021b4c1:	0e38      	l32i.n	a3, a14, 0
+4021b4c3:	a06620        	addx4	a6, a6, a2
+4021b4c6:	005e86        	j	4021b644 <_Z6vm_cpuv+0x22c>
+4021b4c9:	9c2721        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b4cc:	a05520        	addx4	a5, a5, a2
+4021b4cf:	a0ee20        	addx4	a14, a14, a2
+4021b4d2:	a06620        	addx4	a6, a6, a2
+4021b4d5:	0538      	l32i.n	a3, a5, 0
+4021b4d7:	0e28      	l32i.n	a2, a14, 0
+4021b4d9:	232a      	add.n	a2, a3, a2
+4021b4db:	002fc6        	j	4021b59e <_Z6vm_cpuv+0x186>
+4021b4de:	9c2221        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b4e1:	a05520        	addx4	a5, a5, a2
+4021b4e4:	a0ee20        	addx4	a14, a14, a2
+4021b4e7:	a06620        	addx4	a6, a6, a2
+4021b4ea:	0538      	l32i.n	a3, a5, 0
+4021b4ec:	0e28      	l32i.n	a2, a14, 0
+4021b4ee:	102320        	and	a2, a3, a2
+4021b4f1:	002a46        	j	4021b59e <_Z6vm_cpuv+0x186>
+4021b4f4:	9c1d21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b4f7:	a05520        	addx4	a5, a5, a2
+4021b4fa:	a0ee20        	addx4	a14, a14, a2
+4021b4fd:	05d8      	l32i.n	a13, a5, 0
+4021b4ff:	0ee8      	l32i.n	a14, a14, 0
+4021b501:	203dd0        	or	a3, a13, a13
+4021b504:	202ee0        	or	a2, a14, a14
+4021b507:	99a201        	l32r	a0, 40201b90 <uart_flush+0x94>
+4021b50a:	0000c0        	callx0	a0
+4021b50d:	b18031        	l32r	a3, 40207b10 <_Z10advance_pci+0x14>
+4021b510:	0329      	s32i.n	a2, a3, 0
+4021b512:	0d3d      	mov.n	a3, a13
+4021b514:	0e2d      	mov.n	a2, a14
+4021b516:	990501        	l32r	a0, 4020192c <uart_peek_char+0x34>
+4021b519:	0000c0        	callx0	a0
+4021b51c:	b17c31        	l32r	a3, 40207b0c <_Z10advance_pci+0x10>
+4021b51f:	000786        	j	4021b541 <_Z6vm_cpuv+0x129>
+4021b522:	9c1121        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b525:	030c      	movi.n	a3, 0
+4021b527:	a05520        	addx4	a5, a5, a2
+4021b52a:	a0ee20        	addx4	a14, a14, a2
+4021b52d:	0e48      	l32i.n	a4, a14, 0
+4021b52f:	0528      	l32i.n	a2, a5, 0
+4021b531:	035d      	mov.n	a5, a3
+4021b533:	ffb601        	l32r	a0, 4021b40c <espconn_pbuf_delete+0x40>
+4021b536:	0000c0        	callx0	a0
+4021b539:	b17441        	l32r	a4, 40207b0c <_Z10advance_pci+0x10>
+4021b53c:	0439      	s32i.n	a3, a4, 0
+4021b53e:	b17431        	l32r	a3, 40207b10 <_Z10advance_pci+0x14>
+4021b541:	0329      	s32i.n	a2, a3, 0
+4021b543:	02b1c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b546:	9c0821        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b549:	a05520        	addx4	a5, a5, a2
+4021b54c:	a0ee20        	addx4	a14, a14, a2
+4021b54f:	0538      	l32i.n	a3, a5, 0
+4021b551:	a06620        	addx4	a6, a6, a2
+4021b554:	0e28      	l32i.n	a2, a14, 0
+4021b556:	202320        	or	a2, a3, a2
+4021b559:	f37c      	movi.n	a3, -1
+4021b55b:	0031c6        	j	4021b626 <_Z6vm_cpuv+0x20e>
+4021b55e:	9c0221        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b561:	a05520        	addx4	a5, a5, a2
+4021b564:	a0ee20        	addx4	a14, a14, a2
+4021b567:	a06620        	addx4	a6, a6, a2
+4021b56a:	0538      	l32i.n	a3, a5, 0
+4021b56c:	0e28      	l32i.n	a2, a14, 0
+4021b56e:	202320        	or	a2, a3, a2
+4021b571:	000a46        	j	4021b59e <_Z6vm_cpuv+0x186>
+4021b574:	9bfd21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b577:	a05520        	addx4	a5, a5, a2
+4021b57a:	a06620        	addx4	a6, a6, a2
+4021b57d:	0528      	l32i.n	a2, a5, 0
+4021b57f:	401300        	ssl	a3
+4021b582:	a13200        	sll	a3, a2
+4021b585:	002ec6        	j	4021b644 <_Z6vm_cpuv+0x22c>
+4021b588:	9bf821        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b58b:	a05520        	addx4	a5, a5, a2
+4021b58e:	a0ee20        	addx4	a14, a14, a2
+4021b591:	a06620        	addx4	a6, a6, a2
+4021b594:	0538      	l32i.n	a3, a5, 0
+4021b596:	0e28      	l32i.n	a2, a14, 0
+4021b598:	401200        	ssl	a2
+4021b59b:	a12300        	sll	a2, a3
+4021b59e:	0629      	s32i.n	a2, a6, 0
+4021b5a0:	029a86        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b5a3:	9bf141        	l32r	a4, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b5a6:	1166e0        	slli	a6, a6, 2
+4021b5a9:	a05540        	addx4	a5, a5, a4
+4021b5ac:	0528      	l32i.n	a2, a5, 0
+4021b5ae:	045d      	mov.n	a5, a4
+4021b5b0:	0142d6        	bgez	a2, 4021b5c8 <_Z6vm_cpuv+0x1b0>
+4021b5b3:	139c      	beqz.n	a3, 4021b5c8 <_Z6vm_cpuv+0x1b0>
+4021b5b5:	f57c      	movi.n	a5, -1
+4021b5b7:	400300        	ssr	a3
+4021b5ba:	913050        	srl	a3, a5
+4021b5bd:	305530        	xor	a5, a5, a3
+4021b5c0:	646a      	add.n	a6, a4, a6
+4021b5c2:	202520        	or	a2, a5, a2
+4021b5c5:	fff546        	j	4021b59e <_Z6vm_cpuv+0x186>
+4021b5c8:	656a      	add.n	a6, a5, a6
+4021b5ca:	400300        	ssr	a3
+4021b5cd:	b13020        	sra	a3, a2
+4021b5d0:	001c06        	j	4021b644 <_Z6vm_cpuv+0x22c>
+4021b5d3:	9be521        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b5d6:	a05520        	addx4	a5, a5, a2
+4021b5d9:	a06620        	addx4	a6, a6, a2
+4021b5dc:	0528      	l32i.n	a2, a5, 0
+4021b5de:	400300        	ssr	a3
+4021b5e1:	913020        	srl	a3, a2
+4021b5e4:	001706        	j	4021b644 <_Z6vm_cpuv+0x22c>
+4021b5e7:	9be021        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b5ea:	a05520        	addx4	a5, a5, a2
+4021b5ed:	a0ee20        	addx4	a14, a14, a2
+4021b5f0:	a06620        	addx4	a6, a6, a2
+4021b5f3:	0538      	l32i.n	a3, a5, 0
+4021b5f5:	0e28      	l32i.n	a2, a14, 0
+4021b5f7:	400200        	ssr	a2
+4021b5fa:	912030        	srl	a2, a3
+4021b5fd:	ffe746        	j	4021b59e <_Z6vm_cpuv+0x186>
+4021b600:	9bda21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b603:	a0ee20        	addx4	a14, a14, a2
+4021b606:	a05520        	addx4	a5, a5, a2
+4021b609:	a06620        	addx4	a6, a6, a2
+4021b60c:	0e38      	l32i.n	a3, a14, 0
+4021b60e:	0528      	l32i.n	a2, a5, 0
+4021b610:	c02320        	sub	a2, a3, a2
+4021b613:	ffe1c6        	j	4021b59e <_Z6vm_cpuv+0x186>
+4021b616:	9bd421        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b619:	a05520        	addx4	a5, a5, a2
+4021b61c:	a0ee20        	addx4	a14, a14, a2
+4021b61f:	a06620        	addx4	a6, a6, a2
+4021b622:	0538      	l32i.n	a3, a5, 0
+4021b624:	0e28      	l32i.n	a2, a14, 0
+4021b626:	302320        	xor	a2, a3, a2
+4021b629:	ffdc46        	j	4021b59e <_Z6vm_cpuv+0x186>
+4021b62c:	9bcf21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b62f:	130c      	movi.n	a3, 1
+4021b631:	a0ee20        	addx4	a14, a14, a2
+4021b634:	a05520        	addx4	a5, a5, a2
+4021b637:	a06620        	addx4	a6, a6, a2
+4021b63a:	0e48      	l32i.n	a4, a14, 0
+4021b63c:	0528      	l32i.n	a2, a5, 0
+4021b63e:	023427        	bltu	a4, a2, 4021b644 <_Z6vm_cpuv+0x22c>
+4021b641:	00a032        	movi	a3, 0
+4021b644:	0639      	s32i.n	a3, a6, 0
+4021b646:	027106        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b649:	b12a21        	l32r	a2, 40207af4 <_Z7syscallh+0xb4>
+4021b64c:	9bc731        	l32r	a3, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b64f:	0248      	l32i.n	a4, a2, 0
+4021b651:	888b      	addi.n	a8, a8, 8
+4021b653:	1f6382        	s32i	a8, a3, 124
+4021b656:	0f49      	s32i.n	a4, a15, 0
+4021b658:	000246        	j	4021b665 <_Z6vm_cpuv+0x24d>
+4021b65b:	b12621        	l32r	a2, 40207af4 <_Z7syscallh+0xb4>
+4021b65e:	0238      	l32i.n	a3, a2, 0
+4021b660:	0f39      	s32i.n	a3, a15, 0
+4021b662:	9bc131        	l32r	a3, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b665:	a0ee30        	addx4	a14, a14, a3
+4021b668:	0e38      	l32i.n	a3, a14, 0
+4021b66a:	0239      	s32i.n	a3, a2, 0
+4021b66c:	026906        	j	4021c014 <_Z6vm_cpuv+0xbfc>
+4021b66f:	9bbe21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b672:	a06620        	addx4	a6, a6, a2
+4021b675:	b12521        	l32r	a2, 40207b0c <_Z10advance_pci+0x10>
+4021b678:	000206        	j	4021b684 <_Z6vm_cpuv+0x26c>
+4021b67b:	9bbb21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b67e:	a06620        	addx4	a6, a6, a2
+4021b681:	b12321        	l32r	a2, 40207b10 <_Z10advance_pci+0x14>
+4021b684:	0228      	l32i.n	a2, a2, 0
+4021b686:	ffc506        	j	4021b59e <_Z6vm_cpuv+0x186>
+4021b689:	b72100        	excw
+4021b68c:	209b      	addi.n	a2, a0, 9
+4021b68e:	ee          	.byte 0xee
+4021b68f:	0e38a0        	excw
+4021b692:	b11e21        	l32r	a2, 40207b0c <_Z10advance_pci+0x10>
+4021b695:	000286        	j	4021b6a3 <_Z6vm_cpuv+0x28b>
+4021b698:	9bb421        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b69b:	a0ee20        	addx4	a14, a14, a2
+4021b69e:	0e38      	l32i.n	a3, a14, 0
+4021b6a0:	b11c21        	l32r	a2, 40207b10 <_Z10advance_pci+0x14>
+4021b6a3:	0239      	s32i.n	a3, a2, 0
+4021b6a5:	025946        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b6a8:	9bb021        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b6ab:	080222        	l8ui	a2, a2, 8
+4021b6ae:	ec3905        	call0	40207a40 <_Z7syscallh>
+4021b6b1:	12cc      	bnez.n	a2, 4021b6b6 <_Z6vm_cpuv+0x29e>
+4021b6b3:	0255c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b6b6:	120c      	movi.n	a2, 1
+4021b6b8:	004d22        	s8i	a2, a13, 0
+4021b6bb:	0253c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b6be:	000000        	ill
+4021b6c1:	0189      	s32i.n	a8, a1, 0
+4021b6c3:	ff4d21        	l32r	a2, 4021b3f8 <espconn_pbuf_delete+0x2c>
+4021b6c6:	030c      	movi.n	a3, 0
+4021b6c8:	024d86        	j	4021c002 <_Z6vm_cpuv+0xbea>
+4021b6cb:	9ba721        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b6ce:	a0ee20        	addx4	a14, a14, a2
+4021b6d1:	a05520        	addx4	a5, a5, a2
+4021b6d4:	0e28      	l32i.n	a2, a14, 0
+4021b6d6:	727a      	add.n	a7, a2, a7
+4021b6d8:	000346        	j	4021b6e9 <_Z6vm_cpuv+0x2d1>
+4021b6db:	9ba321        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b6de:	a0ee20        	addx4	a14, a14, a2
+4021b6e1:	a05520        	addx4	a5, a5, a2
+4021b6e4:	0e28      	l32i.n	a2, a14, 0
+4021b6e6:	107270        	and	a7, a2, a7
+4021b6e9:	0579      	s32i.n	a7, a5, 0
+4021b6eb:	0247c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b6ee:	9b9e21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b6f1:	f47070        	extui	a7, a7, 0, 16
+4021b6f4:	a0ee20        	addx4	a14, a14, a2
+4021b6f7:	a05520        	addx4	a5, a5, a2
+4021b6fa:	0e28      	l32i.n	a2, a14, 0
+4021b6fc:	207270        	or	a7, a2, a7
+4021b6ff:	fff986        	j	4021b6e9 <_Z6vm_cpuv+0x2d1>
+4021b702:	9b9921        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b705:	a0ee20        	addx4	a14, a14, a2
+4021b708:	a06620        	addx4	a6, a6, a2
+4021b70b:	0e28      	l32i.n	a2, a14, 0
+4021b70d:	307270        	xor	a7, a2, a7
+4021b710:	0679      	s32i.n	a7, a6, 0
+4021b712:	023e06        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b715:	9b9421        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b718:	117700        	slli	a7, a7, 16
+4021b71b:	a05520        	addx4	a5, a5, a2
+4021b71e:	fff1c6        	j	4021b6e9 <_Z6vm_cpuv+0x2d1>
+4021b721:	9b9121        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b724:	f47070        	extui	a7, a7, 0, 16
+4021b727:	a05520        	addx4	a5, a5, a2
+4021b72a:	ffeec6        	j	4021b6e9 <_Z6vm_cpuv+0x2d1>
+4021b72d:	9b8e21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b730:	a0ee20        	addx4	a14, a14, a2
+4021b733:	0e38      	l32i.n	a3, a14, 0
+4021b735:	a05520        	addx4	a5, a5, a2
+4021b738:	120c      	movi.n	a2, 1
+4021b73a:	02a377        	bge	a3, a7, 4021b740 <_Z6vm_cpuv+0x328>
+4021b73d:	003706        	j	4021b81d <_Z6vm_cpuv+0x405>
+4021b740:	000486        	j	4021b756 <_Z6vm_cpuv+0x33e>
+4021b743:	9b8921        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b746:	a0ee20        	addx4	a14, a14, a2
+4021b749:	0e38      	l32i.n	a3, a14, 0
+4021b74b:	a05520        	addx4	a5, a5, a2
+4021b74e:	120c      	movi.n	a2, 1
+4021b750:	02b377        	bgeu	a3, a7, 4021b756 <_Z6vm_cpuv+0x33e>
+4021b753:	003186        	j	4021b81d <_Z6vm_cpuv+0x405>
+4021b756:	020c      	movi.n	a2, 0
+4021b758:	003046        	j	4021b81d <_Z6vm_cpuv+0x405>
+4021b75b:	9b8331        	l32r	a3, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b75e:	a05530        	addx4	a5, a5, a3
+4021b761:	05d8      	l32i.n	a13, a5, 0
+4021b763:	0d1d66        	bnei	a13, 1, 4021b774 <_Z6vm_cpuv+0x35c>
+4021b766:	a0ee30        	addx4	a14, a14, a3
+4021b769:	0e28      	l32i.n	a2, a14, 0
+4021b76b:	0022d6        	bgez	a2, 4021b771 <_Z6vm_cpuv+0x359>
+4021b76e:	022706        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b771:	00a246        	j	4021b9fe <_Z6vm_cpuv+0x5e6>
+4021b774:	121c      	movi.n	a2, 17
+4021b776:	0e9d27        	bne	a13, a2, 4021b788 <_Z6vm_cpuv+0x370>
+4021b779:	a0ee30        	addx4	a14, a14, a3
+4021b77c:	0e28      	l32i.n	a2, a14, 0
+4021b77e:	0022d6        	bgez	a2, 4021b784 <_Z6vm_cpuv+0x36c>
+4021b781:	022246        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b784:	000846        	j	4021b7a9 <_Z6vm_cpuv+0x391>
+4021b787:	cdcc00        	excw
+4021b78a:	a0ee30        	addx4	a14, a14, a3
+4021b78d:	0e28      	l32i.n	a2, a14, 0
+4021b78f:	002296        	bltz	a2, 4021b795 <_Z6vm_cpuv+0x37d>
+4021b792:	021e06        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b795:	009946        	j	4021b9fe <_Z6vm_cpuv+0x5e6>
+4021b798:	02bd26        	beqi	a13, 16, 4021b79e <_Z6vm_cpuv+0x386>
+4021b79b:	021bc6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b79e:	a0ee30        	addx4	a14, a14, a3
+4021b7a1:	0e28      	l32i.n	a2, a14, 0
+4021b7a3:	002296        	bltz	a2, 4021b7a9 <_Z6vm_cpuv+0x391>
+4021b7a6:	021906        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b7a9:	888b      	addi.n	a8, a8, 8
+4021b7ab:	1f6382        	s32i	a8, a3, 124
+4021b7ae:	009306        	j	4021b9fe <_Z6vm_cpuv+0x5e6>
+4021b7b1:	9b6d21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b7b4:	a0ee20        	addx4	a14, a14, a2
+4021b7b7:	a05520        	addx4	a5, a5, a2
+4021b7ba:	0e38      	l32i.n	a3, a14, 0
+4021b7bc:	0528      	l32i.n	a2, a5, 0
+4021b7be:	008d86        	j	4021b9f8 <_Z6vm_cpuv+0x5e0>
+4021b7c1:	9b6921        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b7c4:	a0ee20        	addx4	a14, a14, a2
+4021b7c7:	0e28      	l32i.n	a2, a14, 0
+4021b7c9:	0212e6        	bgei	a2, 1, 4021b7cf <_Z6vm_cpuv+0x3b7>
+4021b7cc:	020f86        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b7cf:	008ac6        	j	4021b9fe <_Z6vm_cpuv+0x5e6>
+4021b7d2:	9b6521        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b7d5:	a0ee20        	addx4	a14, a14, a2
+4021b7d8:	0e28      	l32i.n	a2, a14, 0
+4021b7da:	0212a6        	blti	a2, 1, 4021b7e0 <_Z6vm_cpuv+0x3c8>
+4021b7dd:	020b46        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b7e0:	008686        	j	4021b9fe <_Z6vm_cpuv+0x5e6>
+4021b7e3:	9b6121        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b7e6:	a0ee20        	addx4	a14, a14, a2
+4021b7e9:	a05520        	addx4	a5, a5, a2
+4021b7ec:	0e38      	l32i.n	a3, a14, 0
+4021b7ee:	0528      	l32i.n	a2, a5, 0
+4021b7f0:	029327        	bne	a3, a2, 4021b7f6 <_Z6vm_cpuv+0x3de>
+4021b7f3:	0205c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b7f6:	008106        	j	4021b9fe <_Z6vm_cpuv+0x5e6>
+4021b7f9:	9b5b31        	l32r	a3, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b7fc:	9b9d41        	l32r	a4, 40202670 <_Z13consume_eventv+0x100>
+4021b7ff:	a0ee30        	addx4	a14, a14, a3
+4021b802:	0e28      	l32i.n	a2, a14, 0
+4021b804:	a05530        	addx4	a5, a5, a3
+4021b807:	242a      	add.n	a2, a4, a2
+4021b809:	727a      	add.n	a7, a2, a7
+4021b80b:	000722        	l8ui	a2, a7, 0
+4021b80e:	80af32        	movi	a3, -128
+4021b811:	103230        	and	a3, a2, a3
+4021b814:	013380        	slli	a3, a3, 24
+4021b817:	642020        	extui	a2, a2, 0, 7
+4021b81a:	202320        	or	a2, a3, a2
+4021b81d:	0529      	s32i.n	a2, a5, 0
+4021b81f:	01fac6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b822:	9b5121        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b825:	9b9231        	l32r	a3, 40202670 <_Z13consume_eventv+0x100>
+4021b828:	a0ee20        	addx4	a14, a14, a2
+4021b82b:	a05520        	addx4	a5, a5, a2
+4021b82e:	0e28      	l32i.n	a2, a14, 0
+4021b830:	232a      	add.n	a2, a3, a2
+4021b832:	727a      	add.n	a7, a2, a7
+4021b834:	000722        	l8ui	a2, a7, 0
+4021b837:	fff886        	j	4021b81d <_Z6vm_cpuv+0x405>
+4021b83a:	9b4b21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b83d:	a0ee20        	addx4	a14, a14, a2
+4021b840:	0e38      	l32i.n	a3, a14, 0
+4021b842:	a05520        	addx4	a5, a5, a2
+4021b845:	9b8a21        	l32r	a2, 40202670 <_Z13consume_eventv+0x100>
+4021b848:	773a      	add.n	a7, a7, a3
+4021b84a:	727a      	add.n	a7, a2, a7
+4021b84c:	010722        	l8ui	a2, a7, 1
+4021b84f:	fff286        	j	4021b81d <_Z6vm_cpuv+0x405>
+4021b852:	9b4521        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b855:	a0ee20        	addx4	a14, a14, a2
+4021b858:	0e38      	l32i.n	a3, a14, 0
+4021b85a:	a05520        	addx4	a5, a5, a2
+4021b85d:	9b8421        	l32r	a2, 40202670 <_Z13consume_eventv+0x100>
+4021b860:	773a      	add.n	a7, a7, a3
+4021b862:	727a      	add.n	a7, a2, a7
+4021b864:	000722        	l8ui	a2, a7, 0
+4021b867:	030732        	l8ui	a3, a7, 3
+4021b86a:	012280        	slli	a2, a2, 24
+4021b86d:	202320        	or	a2, a3, a2
+4021b870:	010732        	l8ui	a3, a7, 1
+4021b873:	113300        	slli	a3, a3, 16
+4021b876:	202230        	or	a2, a2, a3
+4021b879:	020732        	l8ui	a3, a7, 2
+4021b87c:	113380        	slli	a3, a3, 8
+4021b87f:	ffe5c6        	j	4021b81a <_Z6vm_cpuv+0x402>
+4021b882:	9b3921        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b885:	9b7a41        	l32r	a4, 40202670 <_Z13consume_eventv+0x100>
+4021b888:	a0ee20        	addx4	a14, a14, a2
+4021b88b:	0e38      	l32i.n	a3, a14, 0
+4021b88d:	a05520        	addx4	a5, a5, a2
+4021b890:	343a      	add.n	a3, a4, a3
+4021b892:	737a      	add.n	a7, a3, a7
+4021b894:	0528      	l32i.n	a2, a5, 0
+4021b896:	0028c6        	j	4021b93d <_Z6vm_cpuv+0x525>
+4021b899:	9b3321        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b89c:	a0ee20        	addx4	a14, a14, a2
+4021b89f:	0e38      	l32i.n	a3, a14, 0
+4021b8a1:	a05520        	addx4	a5, a5, a2
+4021b8a4:	773a      	add.n	a7, a7, a3
+4021b8a6:	0528      	l32i.n	a2, a5, 0
+4021b8a8:	9b7231        	l32r	a3, 40202670 <_Z13consume_eventv+0x100>
+4021b8ab:	737a      	add.n	a7, a3, a7
+4021b8ad:	743820        	extui	a3, a2, 8, 8
+4021b8b0:	004732        	s8i	a3, a7, 0
+4021b8b3:	001946        	j	4021b91c <_Z6vm_cpuv+0x504>
+4021b8b6:	9b2c21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b8b9:	a0ee20        	addx4	a14, a14, a2
+4021b8bc:	0e38      	l32i.n	a3, a14, 0
+4021b8be:	a05520        	addx4	a5, a5, a2
+4021b8c1:	0528      	l32i.n	a2, a5, 0
+4021b8c3:	773a      	add.n	a7, a7, a3
+4021b8c5:	9b6a31        	l32r	a3, 40202670 <_Z13consume_eventv+0x100>
+4021b8c8:	737a      	add.n	a7, a3, a7
+4021b8ca:	753820        	extui	a3, a2, 24, 8
+4021b8cd:	004732        	s8i	a3, a7, 0
+4021b8d0:	753020        	extui	a3, a2, 16, 8
+4021b8d3:	014732        	s8i	a3, a7, 1
+4021b8d6:	743820        	extui	a3, a2, 8, 8
+4021b8d9:	01b386        	j	4021bfab <_Z6vm_cpuv+0xb93>
+4021b8dc:	9b2321        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b8df:	888b      	addi.n	a8, a8, 8
+4021b8e1:	1f6282        	s32i	a8, a2, 124
+4021b8e4:	b08421        	l32r	a2, 40207af4 <_Z7syscallh+0xb4>
+4021b8e7:	1144e0        	slli	a4, a4, 2
+4021b8ea:	0238      	l32i.n	a3, a2, 0
+4021b8ec:	0249      	s32i.n	a4, a2, 0
+4021b8ee:	0f39      	s32i.n	a3, a15, 0
+4021b8f0:	01c806        	j	4021c014 <_Z6vm_cpuv+0xbfc>
+4021b8f3:	742020        	extui	a2, a2, 0, 8
+4021b8f6:	ec1485        	call0	40207a40 <_Z7syscallh>
+4021b8f9:	01c446        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b8fc:	000000        	ill
+4021b8ff:	9b1a21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b902:	a0ee20        	addx4	a14, a14, a2
+4021b905:	0e38      	l32i.n	a3, a14, 0
+4021b907:	a05520        	addx4	a5, a5, a2
+4021b90a:	773a      	add.n	a7, a7, a3
+4021b90c:	0528      	l32i.n	a2, a5, 0
+4021b90e:	9b5831        	l32r	a3, 40202670 <_Z13consume_eventv+0x100>
+4021b911:	737a      	add.n	a7, a3, a7
+4021b913:	753820        	extui	a3, a2, 24, 8
+4021b916:	004732        	s8i	a3, a7, 0
+4021b919:	752020        	extui	a2, a2, 16, 8
+4021b91c:	014722        	s8i	a2, a7, 1
+4021b91f:	01bac6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b922:	9b1121        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b925:	a0ee20        	addx4	a14, a14, a2
+4021b928:	0e38      	l32i.n	a3, a14, 0
+4021b92a:	a05520        	addx4	a5, a5, a2
+4021b92d:	773a      	add.n	a7, a7, a3
+4021b92f:	9b5031        	l32r	a3, 40202670 <_Z13consume_eventv+0x100>
+4021b932:	0528      	l32i.n	a2, a5, 0
+4021b934:	737a      	add.n	a7, a3, a7
+4021b936:	004722        	s8i	a2, a7, 0
+4021b939:	770b      	addi.n	a7, a7, -1
+4021b93b:	020c      	movi.n	a2, 0
+4021b93d:	004722        	s8i	a2, a7, 0
+4021b940:	01b286        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b943:	9b0921        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b946:	a0ee20        	addx4	a14, a14, a2
+4021b949:	0e38      	l32i.n	a3, a14, 0
+4021b94b:	a05520        	addx4	a5, a5, a2
+4021b94e:	9b4821        	l32r	a2, 40202670 <_Z13consume_eventv+0x100>
+4021b951:	773a      	add.n	a7, a7, a3
+4021b953:	727a      	add.n	a7, a2, a7
+4021b955:	010732        	l8ui	a3, a7, 1
+4021b958:	000722        	l8ui	a2, a7, 0
+4021b95b:	113300        	slli	a3, a3, 16
+4021b95e:	012280        	slli	a2, a2, 24
+4021b961:	ffad46        	j	4021b81a <_Z6vm_cpuv+0x402>
+4021b964:	9b0121        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b967:	a0ee20        	addx4	a14, a14, a2
+4021b96a:	0e38      	l32i.n	a3, a14, 0
+4021b96c:	a05520        	addx4	a5, a5, a2
+4021b96f:	9b4021        	l32r	a2, 40202670 <_Z13consume_eventv+0x100>
+4021b972:	773a      	add.n	a7, a7, a3
+4021b974:	727a      	add.n	a7, a2, a7
+4021b976:	270b      	addi.n	a2, a7, -1
+4021b978:	000222        	l8ui	a2, a2, 0
+4021b97b:	000732        	l8ui	a3, a7, 0
+4021b97e:	112280        	slli	a2, a2, 8
+4021b981:	ffa546        	j	4021b81a <_Z6vm_cpuv+0x402>
+4021b984:	44d620        	extui	a13, a2, 6, 5
+4021b987:	544020        	extui	a4, a2, 0, 6
+4021b98a:	4a8e26        	beqi	a14, 8, 4021b9d8 <_Z6vm_cpuv+0x5c0>
+4021b98d:	830c      	movi.n	a3, 8
+4021b98f:	0733e7        	bltu	a3, a14, 4021b99a <_Z6vm_cpuv+0x582>
+4021b992:	ee9c      	beqz.n	a14, 4021b9b4 <_Z6vm_cpuv+0x59c>
+4021b994:	2d4e26        	beqi	a14, 4, 4021b9c5 <_Z6vm_cpuv+0x5ad>
+4021b997:	00e0c6        	j	4021bd1e <_Z6vm_cpuv+0x906>
+4021b99a:	131c      	movi.n	a3, 17
+4021b99c:	029e37        	bne	a14, a3, 4021b9a2 <_Z6vm_cpuv+0x58a>
+4021b99f:	009746        	j	4021bc00 <_Z6vm_cpuv+0x7e8>
+4021b9a2:	491c      	movi.n	a9, 20
+4021b9a4:	029e97        	bne	a14, a9, 4021b9aa <_Z6vm_cpuv+0x592>
+4021b9a7:	00d446        	j	4021bcfc <_Z6vm_cpuv+0x8e4>
+4021b9aa:	02be26        	beqi	a14, 16, 4021b9b0 <_Z6vm_cpuv+0x598>
+4021b9ad:	00db46        	j	4021bd1e <_Z6vm_cpuv+0x906>
+4021b9b0:	001406        	j	4021ba04 <_Z6vm_cpuv+0x5ec>
+4021b9b3:	ed2100        	excw
+4021b9b6:	209a      	add.n	a2, a0, a9
+4021b9b8:	21a055        	excw
+4021b9bb:	20fe90        	or	a15, a14, a9
+4021b9be:	28a066        	bnei	a0, 12, 4021b9ea <_Z6vm_cpuv+0x5d2>
+4021b9c1:	95c606        	j	402010dd <__wrap_system_restart_local+0xd>
+4021b9c4:	ff          	.byte 0xff
+4021b9c5:	fe8d21        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021b9c8:	a06620        	addx4	a6, a6, a2
+4021b9cb:	9ae721        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021b9ce:	a05520        	addx4	a5, a5, a2
+4021b9d1:	0528      	l32i.n	a2, a5, 0
+4021b9d3:	0629      	s32i.n	a2, a6, 0
+4021b9d5:	018d46        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b9d8:	fe8a41        	l32r	a4, 4021b400 <espconn_pbuf_delete+0x34>
+4021b9db:	252220        	extui	a2, a2, 18, 3
+4021b9de:	130c      	movi.n	a3, 1
+4021b9e0:	000442        	l8ui	a4, a4, 0
+4021b9e3:	149090        	extui	a9, a9, 0, 2
+4021b9e6:	401200        	ssl	a2
+4021b9e9:	a13300        	sll	a3, a3
+4021b9ec:	401200        	ssl	a2
+4021b9ef:	a12900        	sll	a2, a9
+4021b9f2:	103340        	and	a3, a3, a4
+4021b9f5:	742020        	extui	a2, a2, 0, 8
+4021b9f8:	021327        	beq	a3, a2, 4021b9fe <_Z6vm_cpuv+0x5e6>
+4021b9fb:	0183c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021b9fe:	1127e0        	slli	a2, a7, 2
+4021ba01:	018306        	j	4021c011 <_Z6vm_cpuv+0xbf9>
+4021ba04:	027466        	bnei	a4, 7, 4021ba0a <_Z6vm_cpuv+0x5f2>
+4021ba07:	002e46        	j	4021bac4 <_Z6vm_cpuv+0x6ac>
+4021ba0a:	1e84f6        	bgeui	a4, 8, 4021ba2c <_Z6vm_cpuv+0x614>
+4021ba0d:	7b2426        	beqi	a4, 2, 4021ba8c <_Z6vm_cpuv+0x674>
+4021ba10:	0834f6        	bgeui	a4, 3, 4021ba1c <_Z6vm_cpuv+0x604>
+4021ba13:	04e416        	beqz	a4, 4021ba65 <_Z6vm_cpuv+0x64d>
+4021ba16:	5e1426        	beqi	a4, 1, 4021ba78 <_Z6vm_cpuv+0x660>
+4021ba19:	0074c6        	j	4021bbf0 <_Z6vm_cpuv+0x7d8>
+4021ba1c:	023466        	bnei	a4, 3, 4021ba22 <_Z6vm_cpuv+0x60a>
+4021ba1f:	002146        	j	4021baa8 <_Z6vm_cpuv+0x690>
+4021ba22:	026466        	bnei	a4, 6, 4021ba28 <_Z6vm_cpuv+0x610>
+4021ba25:	0035c6        	j	4021bb00 <_Z6vm_cpuv+0x6e8>
+4021ba28:	007106        	j	4021bbf0 <_Z6vm_cpuv+0x7d8>
+4021ba2b:	132c00        	excw
+4021ba2e:	029437        	bne	a4, a3, 4021ba34 <_Z6vm_cpuv+0x61c>
+4021ba31:	0036c6        	j	4021bb10 <_Z6vm_cpuv+0x6f8>
+4021ba34:	123347        	bltu	a3, a4, 4021ba4a <_Z6vm_cpuv+0x632>
+4021ba37:	d20c      	movi.n	a2, 13
+4021ba39:	029427        	bne	a4, a2, 4021ba3f <_Z6vm_cpuv+0x627>
+4021ba3c:	002606        	j	4021bad8 <_Z6vm_cpuv+0x6c0>
+4021ba3f:	321c      	movi.n	a2, 19
+4021ba41:	029427        	bne	a4, a2, 4021ba47 <_Z6vm_cpuv+0x62f>
+4021ba44:	002b46        	j	4021baf5 <_Z6vm_cpuv+0x6dd>
+4021ba47:	006946        	j	4021bbf0 <_Z6vm_cpuv+0x7d8>
+4021ba4a:	433c      	movi.n	a3, 52
+4021ba4c:	029437        	bne	a4, a3, 4021ba52 <_Z6vm_cpuv+0x63a>
+4021ba4f:	003d46        	j	4021bb48 <_Z6vm_cpuv+0x730>
+4021ba52:	733c      	movi.n	a3, 55
+4021ba54:	029437        	bne	a4, a3, 4021ba5a <_Z6vm_cpuv+0x642>
+4021ba57:	005386        	j	4021bba9 <_Z6vm_cpuv+0x791>
+4021ba5a:	233c      	movi.n	a3, 50
+4021ba5c:	021437        	beq	a4, a3, 4021ba62 <_Z6vm_cpuv+0x64a>
+4021ba5f:	006346        	j	4021bbf0 <_Z6vm_cpuv+0x7d8>
+4021ba62:	002ec6        	j	4021bb21 <_Z6vm_cpuv+0x709>
+4021ba65:	fe6521        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021ba68:	a05520        	addx4	a5, a5, a2
+4021ba6b:	a06620        	addx4	a6, a6, a2
+4021ba6e:	a0dd20        	addx4	a13, a13, a2
+4021ba71:	0538      	l32i.n	a3, a5, 0
+4021ba73:	0628      	l32i.n	a2, a6, 0
+4021ba75:	00f486        	j	4021be4b <_Z6vm_cpuv+0xa33>
+4021ba78:	fe6121        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021ba7b:	a05520        	addx4	a5, a5, a2
+4021ba7e:	a06620        	addx4	a6, a6, a2
+4021ba81:	a0dd20        	addx4	a13, a13, a2
+4021ba84:	0538      	l32i.n	a3, a5, 0
+4021ba86:	0628      	l32i.n	a2, a6, 0
+4021ba88:	0103c6        	j	4021be9b <_Z6vm_cpuv+0xa83>
+4021ba8b:	5c2100        	excw
+4021ba8e:	fe          	.byte 0xfe
+4021ba8f:	a05520        	addx4	a5, a5, a2
+4021ba92:	a06620        	addx4	a6, a6, a2
+4021ba95:	a0dd20        	addx4	a13, a13, a2
+4021ba98:	002532        	l32i	a3, a5, 0
+4021ba9b:	002622        	l32i	a2, a6, 0
+4021ba9e:	a14f01        	l32r	a0, 40203fdc <_ZNSt3mapISs5StateSt4lessISsESaISt4pairIKSsS0_EEEixEOSs+0xec>
+4021baa1:	0000c0        	callx0	a0
+4021baa4:	00fe46        	j	4021bea1 <_Z6vm_cpuv+0xa89>
+4021baa7:	552100        	extui	a2, a0, 17, 6
+4021baaa:	fe          	.byte 0xfe
+4021baab:	a05520        	addx4	a5, a5, a2
+4021baae:	a06620        	addx4	a6, a6, a2
+4021bab1:	a0dd20        	addx4	a13, a13, a2
+4021bab4:	002532        	l32i	a3, a5, 0
+4021bab7:	002622        	l32i	a2, a6, 0
+4021baba:	a58601        	l32r	a0, 402050d4 <_ZNSt4listISsSaISsEEaSERKS1_+0x110>
+4021babd:	0000c0        	callx0	a0
+4021bac0:	00f746        	j	4021bea1 <_Z6vm_cpuv+0xa89>
+4021bac3:	4e2100        	excw
+4021bac6:	fe          	.byte 0xfe
+4021bac7:	a06620        	addx4	a6, a6, a2
+4021baca:	a0dd20        	addx4	a13, a13, a2
+4021bacd:	0638      	l32i.n	a3, a6, 0
+4021bacf:	a17d21        	l32r	a2, 402040c4 <_ZN11ArduinoJson10TypeTraits11FloatTraitsIfLj4EE10make_floatIiEEffT_+0xe4>
+4021bad2:	302320        	xor	a2, a3, a2
+4021bad5:	00f206        	j	4021bea1 <_Z6vm_cpuv+0xa89>
+4021bad8:	fe4921        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021badb:	a06620        	addx4	a6, a6, a2
+4021bade:	a0dd20        	addx4	a13, a13, a2
+4021bae1:	0628      	l32i.n	a2, a6, 0
+4021bae3:	9ee401        	l32r	a0, 40203674 <_ZN5TraitD1Ev+0x2c>
+4021bae6:	0000c0        	callx0	a0
+4021bae9:	a17801        	l32r	a0, 402040cc <_ZN11ArduinoJson10TypeTraits11FloatTraitsIfLj4EE10make_floatIiEEffT_+0xec>
+4021baec:	0000c0        	callx0	a0
+4021baef:	00eb86        	j	4021bea1 <_Z6vm_cpuv+0xa89>
+4021baf2:	000000        	ill
+4021baf5:	9a9c21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021baf8:	a05520        	addx4	a5, a5, a2
+4021bafb:	0528      	l32i.n	a2, a5, 0
+4021bafd:	50d216        	beqz	a2, 4021c00e <_Z6vm_cpuv+0xbf6>
+4021bb00:	fe3f21        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bb03:	a06620        	addx4	a6, a6, a2
+4021bb06:	0638      	l32i.n	a3, a6, 0
+4021bb08:	a0dd20        	addx4	a13, a13, a2
+4021bb0b:	0d39      	s32i.n	a3, a13, 0
+4021bb0d:	013f46        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bb10:	fe3be1        	l32r	a14, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bb13:	a066e0        	addx4	a6, a6, a14
+4021bb16:	0628      	l32i.n	a2, a6, 0
+4021bb18:	990801        	l32r	a0, 40201f38 <_Z17toggleLED_handlerR7Command+0x6c>
+4021bb1b:	0000c0        	callx0	a0
+4021bb1e:	005486        	j	4021bc74 <_Z6vm_cpuv+0x85c>
+4021bb21:	24d820        	extui	a13, a2, 8, 3
+4021bb24:	fe3621        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bb27:	a06620        	addx4	a6, a6, a2
+4021bb2a:	a05520        	addx4	a5, a5, a2
+4021bb2d:	0648      	l32i.n	a4, a6, 0
+4021bb2f:	05f8      	l32i.n	a15, a5, 0
+4021bb31:	042d      	mov.n	a2, a4
+4021bb33:	0f3d      	mov.n	a3, a15
+4021bb35:	4149      	s32i.n	a4, a1, 16
+4021bb37:	fe3601        	l32r	a0, 4021b410 <espconn_pbuf_delete+0x44>
+4021bb3a:	0000c0        	callx0	a0
+4021bb3d:	4148      	l32i.n	a4, a1, 16
+4021bb3f:	fe30e1        	l32r	a14, 4021b400 <espconn_pbuf_delete+0x34>
+4021bb42:	04f256        	bnez	a2, 4021bb95 <_Z6vm_cpuv+0x77d>
+4021bb45:	0008c6        	j	4021bb6c <_Z6vm_cpuv+0x754>
+4021bb48:	24d820        	extui	a13, a2, 8, 3
+4021bb4b:	fe2c21        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bb4e:	a06620        	addx4	a6, a6, a2
+4021bb51:	a05520        	addx4	a5, a5, a2
+4021bb54:	0648      	l32i.n	a4, a6, 0
+4021bb56:	05f8      	l32i.n	a15, a5, 0
+4021bb58:	042d      	mov.n	a2, a4
+4021bb5a:	0f3d      	mov.n	a3, a15
+4021bb5c:	4149      	s32i.n	a4, a1, 16
+4021bb5e:	a56201        	l32r	a0, 402050e8 <_ZNSt4listISsSaISsEEaSERKS1_+0x124>
+4021bb61:	0000c0        	callx0	a0
+4021bb64:	4148      	l32i.n	a4, a1, 16
+4021bb66:	fe26e1        	l32r	a14, 4021b400 <espconn_pbuf_delete+0x34>
+4021bb69:	0282d6        	bgez	a2, 4021bb95 <_Z6vm_cpuv+0x77d>
+4021bb6c:	042d      	mov.n	a2, a4
+4021bb6e:	043d      	mov.n	a3, a4
+4021bb70:	fe2801        	l32r	a0, 4021b410 <espconn_pbuf_delete+0x44>
+4021bb73:	0000c0        	callx0	a0
+4021bb76:	b2dc      	bnez.n	a2, 4021bb95 <_Z6vm_cpuv+0x77d>
+4021bb78:	0f2d      	mov.n	a2, a15
+4021bb7a:	0f3d      	mov.n	a3, a15
+4021bb7c:	fe2501        	l32r	a0, 4021b410 <espconn_pbuf_delete+0x44>
+4021bb7f:	0000c0        	callx0	a0
+4021bb82:	f2cc      	bnez.n	a2, 4021bb95 <_Z6vm_cpuv+0x77d>
+4021bb84:	120c      	movi.n	a2, 1
+4021bb86:	000e32        	l8ui	a3, a14, 0
+4021bb89:	401d00        	ssl	a13
+4021bb8c:	a1d200        	sll	a13, a2
+4021bb8f:	20dd30        	or	a13, a13, a3
+4021bb92:	000346        	j	4021bba3 <_Z6vm_cpuv+0x78b>
+4021bb95:	e27c      	movi.n	a2, -2
+4021bb97:	000e32        	l8ui	a3, a14, 0
+4021bb9a:	401d00        	ssl	a13
+4021bb9d:	81d220        	src	a13, a2, a2
+4021bba0:	10dd30        	and	a13, a13, a3
+4021bba3:	004ed2        	s8i	a13, a14, 0
+4021bba6:	011906        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bba9:	24d820        	extui	a13, a2, 8, 3
+4021bbac:	fe1421        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bbaf:	a05520        	addx4	a5, a5, a2
+4021bbb2:	a06620        	addx4	a6, a6, a2
+4021bbb5:	0538      	l32i.n	a3, a5, 0
+4021bbb7:	002622        	l32i	a2, a6, 0
+4021bbba:	fe1601        	l32r	a0, 4021b414 <espconn_pbuf_delete+0x48>
+4021bbbd:	0000c0        	callx0	a0
+4021bbc0:	140c      	movi.n	a4, 1
+4021bbc2:	fe0f31        	l32r	a3, 4021b400 <espconn_pbuf_delete+0x34>
+4021bbc5:	0fa247        	bge	a2, a4, 4021bbd8 <_Z6vm_cpuv+0x7c0>
+4021bbc8:	000352        	l8ui	a5, a3, 0
+4021bbcb:	401d00        	ssl	a13
+4021bbce:	a14400        	sll	a4, a4
+4021bbd1:	204450        	or	a4, a4, a5
+4021bbd4:	000446        	j	4021bbe9 <_Z6vm_cpuv+0x7d1>
+4021bbd7:	1d0000        	excw
+4021bbda:	d40040        	extui	a0, a4, 0, 14
+4021bbdd:	0352a1        	l32r	a10, 401dc928 <_lit4_end+0xd5cac>
+4021bbe0:	f47c00        	extui	a7, a0, 12, 16
+4021bbe3:	3044d0        	xor	a4, a4, a13
+4021bbe6:	104450        	and	a4, a4, a5
+4021bbe9:	004342        	s8i	a4, a3, 0
+4021bbec:	010786        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bbef:	014900        	slli	a4, a9, 32
+4021bbf2:	1189      	s32i.n	a8, a1, 4
+4021bbf4:	fe0421        	l32r	a2, 4021b404 <espconn_pbuf_delete+0x38>
+4021bbf7:	131c      	movi.n	a3, 17
+4021bbf9:	041c      	movi.n	a4, 16
+4021bbfb:	00bb06        	j	4021beeb <_Z6vm_cpuv+0xad3>
+4021bbfe:	260000        	excw
+4021bc01:	f65724        	excw
+4021bc04:	9c0934        	excw
+4021bc07:	1426b4        	excw
+4021bc0a:	374635        	excw
+4021bc0d:	000000        	ill
+4021bc10:	0294e7        	bne	a4, a14, 4021bc16 <_Z6vm_cpuv+0x7fe>
+4021bc13:	001f46        	j	4021bc94 <_Z6vm_cpuv+0x87c>
+4021bc16:	02c466        	bnei	a4, 32, 4021bc1c <_Z6vm_cpuv+0x804>
+4021bc19:	002e06        	j	4021bcd5 <_Z6vm_cpuv+0x8bd>
+4021bc1c:	027426        	beqi	a4, 7, 4021bc22 <_Z6vm_cpuv+0x80a>
+4021bc1f:	003246        	j	4021bcec <_Z6vm_cpuv+0x8d4>
+4021bc22:	001506        	j	4021bc7a <_Z6vm_cpuv+0x862>
+4021bc25:	fdf5e1        	l32r	a14, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bc28:	a046e0        	addx4	a4, a6, a14
+4021bc2b:	a075e0        	addx4	a7, a5, a14
+4021bc2e:	1428      	l32i.n	a2, a4, 4
+4021bc30:	0438      	l32i.n	a3, a4, 0
+4021bc32:	0758      	l32i.n	a5, a7, 0
+4021bc34:	1748      	l32i.n	a4, a7, 4
+4021bc36:	98c101        	l32r	a0, 40201f3c <_Z17toggleLED_handlerR7Command+0x70>
+4021bc39:	0000c0        	callx0	a0
+4021bc3c:	000d06        	j	4021bc74 <_Z6vm_cpuv+0x85c>
+4021bc3f:	e10000        	excw
+4021bc42:	ee          	.byte 0xee
+4021bc43:	e0fd      	excw
+4021bc45:	e0a046        	j	40213eca <dhcp_reboot+0xe>
+4021bc48:	28a075        	excw
+4021bc4b:	043814        	excw
+4021bc4e:	0758      	l32i.n	a5, a7, 0
+4021bc50:	1748      	l32i.n	a4, a7, 4
+4021bc52:	bcc901        	l32r	a0, 4020af78 <_ZN5Print5printEhi+0x48>
+4021bc55:	0000c0        	callx0	a0
+4021bc58:	000606        	j	4021bc74 <_Z6vm_cpuv+0x85c>
+4021bc5b:	fde8e1        	l32r	a14, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bc5e:	a046e0        	addx4	a4, a6, a14
+4021bc61:	a075e0        	addx4	a7, a5, a14
+4021bc64:	1428      	l32i.n	a2, a4, 4
+4021bc66:	0438      	l32i.n	a3, a4, 0
+4021bc68:	002752        	l32i	a5, a7, 0
+4021bc6b:	012742        	l32i	a4, a7, 4
+4021bc6e:	a51d01        	l32r	a0, 402050e4 <_ZNSt4listISsSaISsEEaSERKS1_+0x120>
+4021bc71:	0000c0        	callx0	a0
+4021bc74:	a04de0        	addx4	a4, a13, a14
+4021bc77:	009646        	j	4021bed4 <_Z6vm_cpuv+0xabc>
+4021bc7a:	fde041        	l32r	a4, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bc7d:	a11131        	l32r	a3, 402040c4 <_ZN11ArduinoJson10TypeTraits11FloatTraitsIfLj4EE10make_floatIiEEffT_+0xe4>
+4021bc80:	a07640        	addx4	a7, a6, a4
+4021bc83:	0758      	l32i.n	a5, a7, 0
+4021bc85:	1728      	l32i.n	a2, a7, 4
+4021bc87:	305530        	xor	a5, a5, a3
+4021bc8a:	a03d40        	addx4	a3, a13, a4
+4021bc8d:	0359      	s32i.n	a5, a3, 0
+4021bc8f:	03dd      	mov.n	a13, a3
+4021bc91:	0090c6        	j	4021bed8 <_Z6vm_cpuv+0xac0>
+4021bc94:	fddb41        	l32r	a4, 4021b400 <espconn_pbuf_delete+0x34>
+4021bc97:	252220        	extui	a2, a2, 18, 3
+4021bc9a:	130c      	movi.n	a3, 1
+4021bc9c:	000442        	l8ui	a4, a4, 0
+4021bc9f:	149090        	extui	a9, a9, 0, 2
+4021bca2:	401200        	ssl	a2
+4021bca5:	a13300        	sll	a3, a3
+4021bca8:	401200        	ssl	a2
+4021bcab:	a12900        	sll	a2, a9
+4021bcae:	103340        	and	a3, a3, a4
+4021bcb1:	742020        	extui	a2, a2, 0, 8
+4021bcb4:	021327        	beq	a3, a2, 4021bcba <_Z6vm_cpuv+0x8a2>
+4021bcb7:	00d4c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bcba:	fdd021        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bcbd:	a03620        	addx4	a3, a6, a2
+4021bcc0:	0348      	l32i.n	a4, a3, 0
+4021bcc2:	a03d20        	addx4	a3, a13, a2
+4021bcc5:	0349      	s32i.n	a4, a3, 0
+4021bcc7:	a06620        	addx4	a6, a6, a2
+4021bcca:	1638      	l32i.n	a3, a6, 4
+4021bccc:	a0dd20        	addx4	a13, a13, a2
+4021bccf:	1d39      	s32i.n	a3, a13, 4
+4021bcd1:	00ce46        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bcd4:	c92100        	excw
+4021bcd7:	20fd      	excw
+4021bcd9:	20a046        	j	40223f5e <ieee80211_setup_htrates+0x7a>
+4021bcdc:	a0dd      	excw
+4021bcde:	0438      	l32i.n	a3, a4, 0
+4021bce0:	1428      	l32i.n	a2, a4, 4
+4021bce2:	989701        	l32r	a0, 40201f40 <_Z17toggleLED_handlerR7Command+0x74>
+4021bce5:	0000c0        	callx0	a0
+4021bce8:	006d46        	j	4021bea1 <_Z6vm_cpuv+0xa89>
+4021bceb:	131c00        	excw
+4021bcee:	0149      	s32i.n	a4, a1, 0
+4021bcf0:	1189      	s32i.n	a8, a1, 4
+4021bcf2:	fdc421        	l32r	a2, 4021b404 <espconn_pbuf_delete+0x38>
+4021bcf5:	034d      	mov.n	a4, a3
+4021bcf7:	007c06        	j	4021beeb <_Z6vm_cpuv+0xad3>
+4021bcfa:	660000        	excw
+4021bcfd:	2114c4        	excw
+4021bd00:	bf          	.byte 0xbf
+4021bd01:	20fd      	excw
+4021bd03:	20a066        	bnei	a0, 12, 4021bd27 <_Z6vm_cpuv+0x90f>
+4021bd06:	a0dd      	excw
+4021bd08:	0628      	l32i.n	a2, a6, 0
+4021bd0a:	a60501        	l32r	a0, 40205520 <_ZN11ArduinoJson9Polyfills9normalizeIfEEsRT_+0x434>
+4021bd0d:	0000c0        	callx0	a0
+4021bd10:	006346        	j	4021bea1 <_Z6vm_cpuv+0xa89>
+4021bd13:	014900        	slli	a4, a9, 32
+4021bd16:	1189      	s32i.n	a8, a1, 4
+4021bd18:	fdbb21        	l32r	a2, 4021b404 <espconn_pbuf_delete+0x38>
+4021bd1b:	007286        	j	4021bee9 <_Z6vm_cpuv+0xad1>
+4021bd1e:	0189      	s32i.n	a8, a1, 0
+4021bd20:	fdb621        	l32r	a2, 4021b3f8 <espconn_pbuf_delete+0x2c>
+4021bd23:	131c      	movi.n	a3, 17
+4021bd25:	00b646        	j	4021c002 <_Z6vm_cpuv+0xbea>
+4021bd28:	d62000        	excw
+4021bd2b:	202044        	excw
+4021bd2e:	c26654        	excw
+4021bd31:	3e8602        	excw
+4021bd34:	032c00        	excw
+4021bd37:	0d3327        	bltu	a3, a2, 4021bd48 <_Z6vm_cpuv+0x930>
+4021bd3a:	611226        	beqi	a2, 1, 4021bd9f <_Z6vm_cpuv+0x987>
+4021bd3d:	32ac      	beqz.n	a2, 4021bd64 <_Z6vm_cpuv+0x94c>
+4021bd3f:	028266        	bnei	a2, 8, 4021bd45 <_Z6vm_cpuv+0x92d>
+4021bd42:	002d86        	j	4021bdfc <_Z6vm_cpuv+0x9e4>
+4021bd45:	006506        	j	4021bedd <_Z6vm_cpuv+0xac5>
+4021bd48:	832c      	movi.n	a3, 40
+4021bd4a:	029237        	bne	a2, a3, 4021bd50 <_Z6vm_cpuv+0x938>
+4021bd4d:	004bc6        	j	4021be80 <_Z6vm_cpuv+0xa68>
+4021bd50:	932c      	movi.n	a3, 41
+4021bd52:	029237        	bne	a2, a3, 4021bd58 <_Z6vm_cpuv+0x940>
+4021bd55:	005406        	j	4021bea9 <_Z6vm_cpuv+0xa91>
+4021bd58:	132c      	movi.n	a3, 33
+4021bd5a:	021237        	beq	a2, a3, 4021bd60 <_Z6vm_cpuv+0x948>
+4021bd5d:	005f06        	j	4021bedd <_Z6vm_cpuv+0xac5>
+4021bd60:	003c06        	j	4021be54 <_Z6vm_cpuv+0xa3c>
+4021bd63:	012100        	slli	a2, a1, 32
+4021bd66:	209a      	add.n	a2, a0, a9
+4021bd68:	20a055        	excw
+4021bd6b:	ee          	.byte 0xee
+4021bd6c:	0538a0        	extui	a3, a10, 24, 1
+4021bd6f:	0e28      	l32i.n	a2, a14, 0
+4021bd71:	232a      	add.n	a2, a3, a2
+4021bd73:	fda231        	l32r	a3, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bd76:	a0dd30        	addx4	a13, a13, a3
+4021bd79:	9a3d31        	l32r	a3, 40202670 <_Z13consume_eventv+0x100>
+4021bd7c:	232a      	add.n	a2, a3, a2
+4021bd7e:	000242        	l8ui	a4, a2, 0
+4021bd81:	030232        	l8ui	a3, a2, 3
+4021bd84:	014480        	slli	a4, a4, 24
+4021bd87:	204340        	or	a4, a3, a4
+4021bd8a:	010232        	l8ui	a3, a2, 1
+4021bd8d:	113300        	slli	a3, a3, 16
+4021bd90:	204430        	or	a4, a4, a3
+4021bd93:	020232        	l8ui	a3, a2, 2
+4021bd96:	113380        	slli	a3, a3, 8
+4021bd99:	202430        	or	a2, a4, a3
+4021bd9c:	004046        	j	4021bea1 <_Z6vm_cpuv+0xa89>
+4021bd9f:	99f221        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021bda2:	a05520        	addx4	a5, a5, a2
+4021bda5:	a0ee20        	addx4	a14, a14, a2
+4021bda8:	0538      	l32i.n	a3, a5, 0
+4021bdaa:	0e28      	l32i.n	a2, a14, 0
+4021bdac:	9a3151        	l32r	a5, 40202670 <_Z13consume_eventv+0x100>
+4021bdaf:	232a      	add.n	a2, a3, a2
+4021bdb1:	252a      	add.n	a2, a5, a2
+4021bdb3:	000252        	l8ui	a5, a2, 0
+4021bdb6:	030262        	l8ui	a6, a2, 3
+4021bdb9:	015580        	slli	a5, a5, 24
+4021bdbc:	205650        	or	a5, a6, a5
+4021bdbf:	010262        	l8ui	a6, a2, 1
+4021bdc2:	fd8e31        	l32r	a3, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bdc5:	116600        	slli	a6, a6, 16
+4021bdc8:	205560        	or	a5, a5, a6
+4021bdcb:	020262        	l8ui	a6, a2, 2
+4021bdce:	a04d30        	addx4	a4, a13, a3
+4021bdd1:	116680        	slli	a6, a6, 8
+4021bdd4:	205560        	or	a5, a5, a6
+4021bdd7:	050232        	l8ui	a3, a2, 5
+4021bdda:	0459      	s32i.n	a5, a4, 0
+4021bddc:	04dd      	mov.n	a13, a4
+4021bdde:	040242        	l8ui	a4, a2, 4
+4021bde1:	113300        	slli	a3, a3, 16
+4021bde4:	014480        	slli	a4, a4, 24
+4021bde7:	204430        	or	a4, a4, a3
+4021bdea:	070232        	l8ui	a3, a2, 7
+4021bded:	204430        	or	a4, a4, a3
+4021bdf0:	060232        	l8ui	a3, a2, 6
+4021bdf3:	113380        	slli	a3, a3, 8
+4021bdf6:	202430        	or	a2, a4, a3
+4021bdf9:	0036c6        	j	4021bed8 <_Z6vm_cpuv+0xac0>
+4021bdfc:	99db21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021bdff:	9a1c41        	l32r	a4, 40202670 <_Z13consume_eventv+0x100>
+4021be02:	a05520        	addx4	a5, a5, a2
+4021be05:	a0ee20        	addx4	a14, a14, a2
+4021be08:	0538      	l32i.n	a3, a5, 0
+4021be0a:	0e28      	l32i.n	a2, a14, 0
+4021be0c:	232a      	add.n	a2, a3, a2
+4021be0e:	fd7b31        	l32r	a3, 4021b3fc <espconn_pbuf_delete+0x30>
+4021be11:	242a      	add.n	a2, a4, a2
+4021be13:	a06630        	addx4	a6, a6, a3
+4021be16:	0638      	l32i.n	a3, a6, 0
+4021be18:	754830        	extui	a4, a3, 24, 8
+4021be1b:	004242        	s8i	a4, a2, 0
+4021be1e:	f54030        	extui	a4, a3, 16, 16
+4021be21:	014242        	s8i	a4, a2, 1
+4021be24:	414830        	srli	a4, a3, 8
+4021be27:	024242        	s8i	a4, a2, 2
+4021be2a:	034232        	s8i	a3, a2, 3
+4021be2d:	007746        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021be30:	fd73f1        	l32r	a15, 4021b3fc <espconn_pbuf_delete+0x30>
+4021be33:	a066f0        	addx4	a6, a6, a15
+4021be36:	a055f0        	addx4	a5, a5, a15
+4021be39:	0538      	l32i.n	a3, a5, 0
+4021be3b:	0628      	l32i.n	a2, a6, 0
+4021be3d:	a0eef0        	addx4	a14, a14, a15
+4021be40:	a06701        	l32r	a0, 40203fdc <_ZNSt3mapISs5StateSt4lessISsESaISt4pairIKSsS0_EEEixEOSs+0xec>
+4021be43:	0000c0        	callx0	a0
+4021be46:	0e38      	l32i.n	a3, a14, 0
+4021be48:	a0ddf0        	addx4	a13, a13, a15
+4021be4b:	983a01        	l32r	a0, 40201f34 <_Z17toggleLED_handlerR7Command+0x68>
+4021be4e:	0000c0        	callx0	a0
+4021be51:	001306        	j	4021bea1 <_Z6vm_cpuv+0xa89>
+4021be54:	fd6af1        	l32r	a15, 4021b3fc <espconn_pbuf_delete+0x30>
+4021be57:	a046f0        	addx4	a4, a6, a15
+4021be5a:	1428      	l32i.n	a2, a4, 4
+4021be5c:	0438      	l32i.n	a3, a4, 0
+4021be5e:	a045f0        	addx4	a4, a5, a15
+4021be61:	1468      	l32i.n	a6, a4, 4
+4021be63:	0478      	l32i.n	a7, a4, 0
+4021be65:	064d      	mov.n	a4, a6
+4021be67:	205770        	or	a5, a7, a7
+4021be6a:	a49e01        	l32r	a0, 402050e4 <_ZNSt4listISsSaISsEEaSERKS1_+0x120>
+4021be6d:	0000c0        	callx0	a0
+4021be70:	a06ef0        	addx4	a6, a14, a15
+4021be73:	1648      	l32i.n	a4, a6, 4
+4021be75:	0658      	l32i.n	a5, a6, 0
+4021be77:	983101        	l32r	a0, 40201f3c <_Z17toggleLED_handlerR7Command+0x70>
+4021be7a:	0000c0        	callx0	a0
+4021be7d:	001406        	j	4021bed1 <_Z6vm_cpuv+0xab9>
+4021be80:	fd5ff1        	l32r	a15, 4021b3fc <espconn_pbuf_delete+0x30>
+4021be83:	a066f0        	addx4	a6, a6, a15
+4021be86:	a055f0        	addx4	a5, a5, a15
+4021be89:	0538      	l32i.n	a3, a5, 0
+4021be8b:	0628      	l32i.n	a2, a6, 0
+4021be8d:	a0eef0        	addx4	a14, a14, a15
+4021be90:	a05301        	l32r	a0, 40203fdc <_ZNSt3mapISs5StateSt4lessISsESaISt4pairIKSsS0_EEEixEOSs+0xec>
+4021be93:	0000c0        	callx0	a0
+4021be96:	0e38      	l32i.n	a3, a14, 0
+4021be98:	a0ddf0        	addx4	a13, a13, a15
+4021be9b:	a5a201        	l32r	a0, 40205524 <_ZN11ArduinoJson9Polyfills9normalizeIfEEsRT_+0x438>
+4021be9e:	0000c0        	callx0	a0
+4021bea1:	0d29      	s32i.n	a2, a13, 0
+4021bea3:	0059c6        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bea6:	000000        	ill
+4021bea9:	fd54f1        	l32r	a15, 4021b3fc <espconn_pbuf_delete+0x30>
+4021beac:	a046f0        	addx4	a4, a6, a15
+4021beaf:	1428      	l32i.n	a2, a4, 4
+4021beb1:	0438      	l32i.n	a3, a4, 0
+4021beb3:	a045f0        	addx4	a4, a5, a15
+4021beb6:	1468      	l32i.n	a6, a4, 4
+4021beb8:	0478      	l32i.n	a7, a4, 0
+4021beba:	064d      	mov.n	a4, a6
+4021bebc:	075d      	mov.n	a5, a7
+4021bebe:	a48901        	l32r	a0, 402050e4 <_ZNSt4listISsSaISsEEaSERKS1_+0x120>
+4021bec1:	0000c0        	callx0	a0
+4021bec4:	a06ef0        	addx4	a6, a14, a15
+4021bec7:	1648      	l32i.n	a4, a6, 4
+4021bec9:	0658      	l32i.n	a5, a6, 0
+4021becb:	bc2b01        	l32r	a0, 4020af78 <_ZN5Print5printEhi+0x48>
+4021bece:	0000c0        	callx0	a0
+4021bed1:	a04df0        	addx4	a4, a13, a15
+4021bed4:	0439      	s32i.n	a3, a4, 0
+4021bed6:	04dd      	mov.n	a13, a4
+4021bed8:	1d29      	s32i.n	a2, a13, 4
+4021beda:	004c06        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bedd:	006122        	s32i	a2, a1, 0
+4021bee0:	fd4a21        	l32r	a2, 4021b408 <espconn_pbuf_delete+0x3c>
+4021bee3:	016182        	s32i	a8, a1, 4
+4021bee6:	13a032        	movi	a3, 19
+4021bee9:	0e4d      	mov.n	a4, a14
+4021beeb:	0d7d      	mov.n	a7, a13
+4021beed:	f13985        	call0	4020d288 <iprintf>
+4021bef0:	004506        	j	4021c008 <_Z6vm_cpuv+0xbf0>
+4021bef3:	999d21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021bef6:	a0ee20        	addx4	a14, a14, a2
+4021bef9:	0e28      	l32i.n	a2, a14, 0
+4021befb:	772a      	add.n	a7, a7, a2
+4021befd:	fd3f21        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bf00:	a05520        	addx4	a5, a5, a2
+4021bf03:	99db21        	l32r	a2, 40202670 <_Z13consume_eventv+0x100>
+4021bf06:	727a      	add.n	a7, a2, a7
+4021bf08:	000722        	l8ui	a2, a7, 0
+4021bf0b:	030732        	l8ui	a3, a7, 3
+4021bf0e:	012280        	slli	a2, a2, 24
+4021bf11:	202320        	or	a2, a3, a2
+4021bf14:	010732        	l8ui	a3, a7, 1
+4021bf17:	113300        	slli	a3, a3, 16
+4021bf1a:	202230        	or	a2, a2, a3
+4021bf1d:	020732        	l8ui	a3, a7, 2
+4021bf20:	113380        	slli	a3, a3, 8
+4021bf23:	202230        	or	a2, a2, a3
+4021bf26:	0529      	s32i.n	a2, a5, 0
+4021bf28:	003886        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bf2b:	998f21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021bf2e:	99d041        	l32r	a4, 40202670 <_Z13consume_eventv+0x100>
+4021bf31:	a0ee20        	addx4	a14, a14, a2
+4021bf34:	0e28      	l32i.n	a2, a14, 0
+4021bf36:	772a      	add.n	a7, a7, a2
+4021bf38:	747a      	add.n	a7, a4, a7
+4021bf3a:	000742        	l8ui	a4, a7, 0
+4021bf3d:	030762        	l8ui	a6, a7, 3
+4021bf40:	014480        	slli	a4, a4, 24
+4021bf43:	204640        	or	a4, a6, a4
+4021bf46:	010762        	l8ui	a6, a7, 1
+4021bf49:	fd2c21        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bf4c:	116600        	slli	a6, a6, 16
+4021bf4f:	204460        	or	a4, a4, a6
+4021bf52:	020762        	l8ui	a6, a7, 2
+4021bf55:	a03520        	addx4	a3, a5, a2
+4021bf58:	116680        	slli	a6, a6, 8
+4021bf5b:	204460        	or	a4, a4, a6
+4021bf5e:	0349      	s32i.n	a4, a3, 0
+4021bf60:	035d      	mov.n	a5, a3
+4021bf62:	050722        	l8ui	a2, a7, 5
+4021bf65:	040732        	l8ui	a3, a7, 4
+4021bf68:	112200        	slli	a2, a2, 16
+4021bf6b:	013380        	slli	a3, a3, 24
+4021bf6e:	202320        	or	a2, a3, a2
+4021bf71:	070732        	l8ui	a3, a7, 7
+4021bf74:	202230        	or	a2, a2, a3
+4021bf77:	060732        	l8ui	a3, a7, 6
+4021bf7a:	113380        	slli	a3, a3, 8
+4021bf7d:	202230        	or	a2, a2, a3
+4021bf80:	1529      	s32i.n	a2, a5, 4
+4021bf82:	002206        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bf85:	997821        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021bf88:	99ba31        	l32r	a3, 40202670 <_Z13consume_eventv+0x100>
+4021bf8b:	a0ee20        	addx4	a14, a14, a2
+4021bf8e:	0e28      	l32i.n	a2, a14, 0
+4021bf90:	772a      	add.n	a7, a7, a2
+4021bf92:	fd1a21        	l32r	a2, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bf95:	737a      	add.n	a7, a3, a7
+4021bf97:	a05520        	addx4	a5, a5, a2
+4021bf9a:	0528      	l32i.n	a2, a5, 0
+4021bf9c:	753820        	extui	a3, a2, 24, 8
+4021bf9f:	004732        	s8i	a3, a7, 0
+4021bfa2:	f53020        	extui	a3, a2, 16, 16
+4021bfa5:	014732        	s8i	a3, a7, 1
+4021bfa8:	413820        	srli	a3, a2, 8
+4021bfab:	024732        	s8i	a3, a7, 2
+4021bfae:	034722        	s8i	a2, a7, 3
+4021bfb1:	001646        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bfb4:	996d21        	l32r	a2, 40202568 <_Z12insert_eventhPc+0xa4>
+4021bfb7:	fd1131        	l32r	a3, 4021b3fc <espconn_pbuf_delete+0x30>
+4021bfba:	a0ee20        	addx4	a14, a14, a2
+4021bfbd:	0e28      	l32i.n	a2, a14, 0
+4021bfbf:	99ac41        	l32r	a4, 40202670 <_Z13consume_eventv+0x100>
+4021bfc2:	772a      	add.n	a7, a7, a2
+4021bfc4:	a02530        	addx4	a2, a5, a3
+4021bfc7:	0228      	l32i.n	a2, a2, 0
+4021bfc9:	747a      	add.n	a7, a4, a7
+4021bfcb:	754820        	extui	a4, a2, 24, 8
+4021bfce:	a05530        	addx4	a5, a5, a3
+4021bfd1:	004742        	s8i	a4, a7, 0
+4021bfd4:	f54020        	extui	a4, a2, 16, 16
+4021bfd7:	014742        	s8i	a4, a7, 1
+4021bfda:	034722        	s8i	a2, a7, 3
+4021bfdd:	414820        	srli	a4, a2, 8
+4021bfe0:	1528      	l32i.n	a2, a5, 4
+4021bfe2:	024742        	s8i	a4, a7, 2
+4021bfe5:	753820        	extui	a3, a2, 24, 8
+4021bfe8:	044732        	s8i	a3, a7, 4
+4021bfeb:	f53020        	extui	a3, a2, 16, 16
+4021bfee:	054732        	s8i	a3, a7, 5
+4021bff1:	413820        	srli	a3, a2, 8
+4021bff4:	064732        	s8i	a3, a7, 6
+4021bff7:	074722        	s8i	a2, a7, 7
+4021bffa:	000406        	j	4021c00e <_Z6vm_cpuv+0xbf6>
+4021bffd:	fcfe21        	l32r	a2, 4021b3f8 <espconn_pbuf_delete+0x2c>
+4021c000:	0189      	s32i.n	a8, a1, 0
+4021c002:	204ee0        	or	a4, a14, a14
+4021c005:	f12805        	call0	4020d288 <iprintf>
+4021c008:	ffa022        	movi	a2, 255
+4021c00b:	000206        	j	4021c017 <_Z6vm_cpuv+0xbff>
+4021c00e:	002c22        	l32i	a2, a12, 0
+4021c011:	ebae85        	call0	40207afc <_Z10advance_pci>
+4021c014:	00a022        	movi	a2, 0
+4021c017:	0f2102        	l32i	a0, a1, 60
+4021c01a:	e1c8      	l32i.n	a12, a1, 56
+4021c01c:	d1d8      	l32i.n	a13, a1, 52
+4021c01e:	c1e8      	l32i.n	a14, a1, 48
+4021c020:	b1f8      	l32i.n	a15, a1, 44
+4021c022:	40c112        	addi	a1, a1, 64
+4021c025:	f00d      	ret.n
+4021c027:	480400        	excw
+4021c02a:	ff          	.byte 0xff
+4021c02b:	3f          	.byte 0x3f
+4021c02c:	5f4c      	movi.n	a15, 69
+4021c02e:	ff          	.byte 0xff
+4021c02f:	3f          	.byte 0x3f
+4021c030:	7e          	.byte 0x7e
+4021c031:	3ffea3        	excw
+4021c034:	a398      	l32i.n	a9, a3, 40
+4021c036:	fe          	.byte 0xfe
+4021c037:	3f          	.byte 0x3f
+4021c038:	a3cb      	addi.n	a10, a3, 12
+4021c03a:	fe          	.byte 0xfe
+4021c03b:	3f          	.byte 0x3f
+4021c03c:	fe          	.byte 0xfe
+4021c03d:	3ffea3        	excw
+4021c040:	ff4800        	excw
+4021c043:	3f          	.byte 0x3f
+4021c044:	fea423        	excw
+4021c047:	3f          	.byte 0x3f
+4021c048:	5e          	.byte 0x5e
+4021c049:	3ffea4        	excw
+4021c04c:	100310        	and	a0, a3, a1
+4021c04f:	c11240        	mul16u	a1, a2, a4

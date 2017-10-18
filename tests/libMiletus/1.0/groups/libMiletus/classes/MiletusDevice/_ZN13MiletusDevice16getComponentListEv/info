@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: MiletusDevice::getComponentList ()
+Symbol: _ZN13MiletusDevice16getComponentListEv
+Short Name: getComponentList
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

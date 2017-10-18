@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: MiletusDevice::handleEvents ()
+Symbol: _ZN13MiletusDevice12handleEventsEv
+Short Name: handleEvents
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

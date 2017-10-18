@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: comm_call (uint32_t code, char* parameters)
+Symbol: _Z9comm_calljPc
+Short Name: comm_call
+Header: coisa/comm.h
+Shared Object: sharedlibrary.so

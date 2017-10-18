@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: vm_init (uint32_t newPC)
+Symbol: _Z7vm_initj
+Short Name: vm_init
+Header: coisa/vm.h
+Shared Object: sharedlibrary.so

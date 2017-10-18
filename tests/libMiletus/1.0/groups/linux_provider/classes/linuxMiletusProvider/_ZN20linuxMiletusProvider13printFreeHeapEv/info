@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: linuxMiletusProvider::printFreeHeap ()
+Symbol: _ZN20linuxMiletusProvider13printFreeHeapEv
+Short Name: printFreeHeap
+Header: linux/linux_provider.h
+Shared Object: sharedlibrary.so

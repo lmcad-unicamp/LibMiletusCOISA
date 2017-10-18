@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: print (char* str)
+Symbol: _Z5printPc
+Short Name: print
+Header: coisa/serial.h
+Shared Object: sharedlibrary.so

@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: LinuxClient::extractHTTPCmd (std::string msg)
+Symbol: _ZN11LinuxClient14extractHTTPCmdESs
+Short Name: extractHTTPCmd
+Header: linux/linux_wrapper.h
+Shared Object: sharedlibrary.so

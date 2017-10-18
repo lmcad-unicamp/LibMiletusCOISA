@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: MiletusDevice::setStateCallback (char const* componentName, char const* traitName, char const* stateName, bool(*f)())
+Symbol: _ZN13MiletusDevice16setStateCallbackEPKcS1_S1_PFbvE
+Short Name: setStateCallback
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

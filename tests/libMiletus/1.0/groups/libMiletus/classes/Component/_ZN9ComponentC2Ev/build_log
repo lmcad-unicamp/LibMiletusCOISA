@@ -1,0 +1,11 @@
+In file included from test.cpp:1:0:
+/home/flavia/Arduino/libraries/libMiletusCoisa/libMiletus.h:84:34: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   bool responseJsonInitialized = false;
+                                  ^
+/home/flavia/Arduino/libraries/libMiletusCoisa/libMiletus.h:217:19: warning: non-static data member initializers only available with -std=c++11 or -std=gnu++11 [enabled by default]
+   bool jsonInit = false;
+                   ^
+test.cpp: In function ‘int main(int, char**)’:
+test.cpp:11:25: warning: unused variable ‘component’ [-Wunused-variable]
+     Component_SubClass* component = new Component_SubClass(); //target call
+                         ^

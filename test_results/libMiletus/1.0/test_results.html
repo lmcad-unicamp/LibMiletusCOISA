@@ -1,0 +1,806 @@
+<!-- verdict:passed;total:87;passed:87;failed:0;warnings:22 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="libMiletus, test, API" />
+    <meta name="description" content="Test results for the libMiletus-1.0 library on x86_64" />
+    <title>
+        libMiletus-1.0: test results
+    </title>
+    <style type="text/css">
+    body {
+    font-family:Arial;
+    background-color:White;
+    color:Black;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+}
+span.section {
+    white-space:normal;
+    font-weight:bold;
+    cursor:pointer;
+    margin-left:7px;
+    font-family:Arial;
+    color:#003E69;
+}
+span:hover.section {
+    color:#336699;
+}
+span.section_title {
+    font-weight:bold;
+    cursor:pointer;
+    font-size:1.125em;
+    font-family:Arial;
+    color:Black;
+}
+span:hover.section_title {
+    color:#585858;
+}
+span.ext {
+    font-weight:100;
+}
+span.ext_title {
+    font-weight:100;
+}
+span.header {
+    color:#cc3300;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.ns {
+    color:#408080;
+    font-size:0.94em;
+}
+span.lib_name {
+    color:Green;
+    font-size:0.875em;
+    font-weight:bold;
+}
+span.libgroup {
+    color:Black;
+    font-size:0.875em;
+    font-family:Arial;
+    font-weight:bold;
+}
+span.sym_p {
+    font-weight:normal;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:100;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset black;
+    padding: 3px;
+}
+table.summary td {
+    text-align:right;
+    white-space:nowrap;
+    border:1px inset black;
+    padding: 3px 5px 3px 5px;
+}
+pre {
+    padding: 0;
+    margin: 0;
+    word-wrap:break-word;
+    white-space: pre-wrap;
+}
+table.test_view {
+    cursor:text;
+    margin-top:7px;
+    font-family:Monaco, Consolas, 'DejaVu Sans Mono', 'Droid Sans Mono', Monospace;
+    font-size:14px;
+    padding:0px;
+    border:1px solid Black;
+    color:#444444;
+    background-color:White;
+    overflow:auto;
+    margin-left:20px;
+}
+table.test_view th {
+    background-color:White;
+    padding-right:3px;
+    padding-left:3px;
+    text-align:right;
+    font-weight:100;
+    padding:0px 4px 0px 10px;
+    vertical-align:top;
+}
+table.test_view td {
+    padding-left:15px;
+    text-align:left;
+    word-wrap:break-word;
+    max-width:900px;
+    padding:0px 15px 0px 15px;
+}
+table.test_result {
+    margin-top:3px;
+    line-height:16px;
+    margin-left:20px;
+    font-family:Arial;
+    border:0;
+    background-color:#FFE4E1;
+}
+table.l_num td {
+    background-color:white;
+    padding-right:3px;
+    padding-left:3px;
+    text-align:right;
+}
+table.code_lines td {
+    padding-left:15px;
+    text-align:left;
+    white-space:nowrap;
+}
+span.comm {
+    color:#888888;
+}
+span.str {
+    color:#FF00FF;
+}
+span.var {
+    color:Black;
+    font-style:italic;
+}
+span.prepr {
+    color:Green;
+}
+span.type {
+    color:Brown;
+}
+span.keyw {
+    font-weight:bold;
+}
+span.num {
+    color:Blue;
+}
+span.targ {
+    color:Red;
+}
+td.targ {
+    background-color:#FFE4E1
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.attr {
+    color:#333333;
+    font-weight:100;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    color:Red;
+}
+.footer {
+    font-size:0.75em;
+}
+    </style>
+    <script type="text/javascript" language="JavaScript">
+    <!--
+    function showContent(header, id)
+{
+    e = document.getElementById(id);
+    if(e.style.display == 'none')
+    {
+        e.style.display = 'block';
+        e.style.visibility = 'visible';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi,"[&minus;]");
+    }
+    else
+    {
+        e.style.display = 'none';
+        e.style.visibility = 'hidden';
+        header.innerHTML = header.innerHTML.replace(/\[[^0-9 ]\]/gi,"[+]");
+    }
+}
+    -->
+    </script>
+    </head>
+<body>
+<div><a name='Top'></a>
+<h1>Test results for the <span style='color:Blue;'>libMiletus</span>-<span style='color:Blue;'>1.0</span> library on <span style='color:Blue;'>x86_64</span></h1>
+<br/>
+<h2>Summary</h2><hr/><table cellpadding='3' class='summary'><tr><th>Total tests</th><td>87</td></tr><tr><th>Passed / Failed tests</th><td>87 / 0</td></tr><tr><th>Warnings</th><td><a href='#Warnings'>22</a></td></tr><tr><th>Verdict</th><td><span style='color:Green;'><b>Test Passed</b></span></td></tr></table>
+<br/>
+<br/>
+<br/>
+<a name='Warnings'></a><h2>Warnings (22)</h2><hr/>
+<a name='Received_Signal_ABRT'></a><span class="section_title" onclick="javascript:showContent(this, 'c_3')"><span class='ext_title' style='padding-right:2px'>[+]</span>
+Received signal ABRT <span class='ext_title'>(2 warnings)</span></span>
+<br/>
+<div id="c_3" style="display:none;">
+
+<br/>
+<span class='header'>linux_wrapper.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_1')"><span class='ext' style='padding-right:2px'>[+]</span>
+LinuxClient::extractHTTPCmd&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>msg</span> )</span></span></span>
+<br/>
+<div id="c_1" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>received signal ABRT<br/><br/>terminate called after throwing an instance of 'std::out_of_range'<br/>&nbsp;&nbsp;what():&nbsp;&nbsp;basic_string::substr<br/>Aborted (core dumped)<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;linux/linux_wrapper.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    LinuxClient* <span class='var'>client</span> = <span class='keyw'>new</span> LinuxClient(<span class='num'>1</span>);</pre></td></tr>
+<tr><th>6</th><td><pre>    std::string <span class='var'>msg</span> = <span class='str'>"msg"</span>;</pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='var'>client</span>-&gt;<span class='targ'>extractHTTPCmd</span>(<span class='var'>msg</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>8</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>9</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_2')"><span class='ext' style='padding-right:2px'>[+]</span>
+LinuxClient::readString&nbsp;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_2" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>received signal ABRT<br/><br/>Error reading from client<br/>terminate called after throwing an instance of 'std::logic_error'<br/>&nbsp;&nbsp;what():&nbsp;&nbsp;basic_string::_S_construct null not valid<br/>Aborted (core dumped)<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;linux/linux_wrapper.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    LinuxClient* <span class='var'>client</span> = <span class='keyw'>new</span> LinuxClient(<span class='num'>1</span>);</pre></td></tr>
+<tr><th>6</th><td><pre>    <span class='var'>client</span>-&gt;<span class='targ'>readString</span>(<span style='padding-left:2px;'>)</span>; <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>8</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<br/>
+<a style='font-size:11px;' href='#Top'>to the top</a><br/>
+</div>
+<a name='Hanged_Execution'></a><span class="section_title" onclick="javascript:showContent(this, 'c_6')"><span class='ext_title' style='padding-right:2px'>[+]</span>
+Hanged execution <span class='ext_title'>(2 warnings)</span></span>
+<br/>
+<div id="c_6" style="display:none;">
+
+<br/>
+<span class='header'>libMiletus.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_4')"><span class='ext' style='padding-right:2px'>[+]</span>
+MiletusDevice::RunCoisaCode&nbsp;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_4" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>hanged execution (more than 7 seconds)</td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>6</th><td><pre>    MiletusDevice* <span class='var'>device</span> = <span class='keyw'>new</span> MiletusDevice(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='var'>device</span>-&gt;<span class='targ'>RunCoisaCode</span>(<span style='padding-left:2px;'>)</span>; <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>8</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>9</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<br/>
+<span class='header'>TM.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_5')"><span class='ext' style='padding-right:2px'>[+]</span>
+ThingMonitor::RunCode&nbsp;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_5" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>hanged execution (more than 7 seconds)<br/>Running code<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>3</th><td><pre>{</pre></td></tr>
+<tr><th>4</th><td><pre>    ThingMonitor* <span class='var'>thingmonitor</span> = <span class='keyw'>new</span> ThingMonitor(<span style='padding-left:2px;'>)</span>;</pre></td></tr>
+<tr><th>5</th><td><pre>    <span class='var'>thingmonitor</span>-&gt;<span class='targ'>RunCode</span>(<span style='padding-left:2px;'>)</span>; <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>6</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>7</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<br/>
+<a style='font-size:11px;' href='#Top'>to the top</a><br/>
+</div>
+<a name='Unexpected_Output'></a><span class="section_title" onclick="javascript:showContent(this, 'c_24')"><span class='ext_title' style='padding-right:2px'>[+]</span>
+Unexpected Output <span class='ext_title'>(17 warnings)</span></span>
+<br/>
+<div id="c_24" style="display:none;">
+
+<br/>
+<span class='header'>comm.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_7')"><span class='ext' style='padding-right:2px'>[+]</span>
+execute_weave_command&nbsp;<span class='sym_p'>(&#160;char* <span class='color_p'>traitCommand</span>, <span class='nowrap'>char* <span class='color_p'>parameters</span> )</span></span></span>
+<br/>
+<div id="c_7" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>/usr/bin/python: can't open file '/home/jeferson/weave/libweave_coisa/weave_client-0.1.12/weave_client.py': [Errno 2] No such file or directory<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;coisa/comm.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>3</th><td><pre>{</pre></td></tr>
+<tr><th>4</th><td><pre>    <span class='type'>char</span> <span class='var'>traitCommand</span> [<span style='padding-left:2px;'>]</span> = {</pre></td></tr>
+<tr><th>5</th><td><pre>        <span class='str'>'A'</span>,</pre></td></tr>
+<tr><th>6</th><td><pre>        <span class='str'>'B'</span>,</pre></td></tr>
+<tr><th>7</th><td><pre>        <span class='str'>'C'</span>,</pre></td></tr>
+<tr><th>8</th><td><pre>        <span class='str'>'D'</span>,</pre></td></tr>
+<tr><th>9</th><td><pre>        <span class='str'>'\0'</span>};</pre></td></tr>
+<tr><th>10</th><td><pre>    <span class='type'>char</span> <span class='var'>parameters</span> [<span style='padding-left:2px;'>]</span> = {</pre></td></tr>
+<tr><th>11</th><td><pre>        <span class='str'>'E'</span>,</pre></td></tr>
+<tr><th>12</th><td><pre>        <span class='str'>'F'</span>,</pre></td></tr>
+<tr><th>13</th><td><pre>        <span class='str'>'G'</span>,</pre></td></tr>
+<tr><th>14</th><td><pre>        <span class='str'>'H'</span>,</pre></td></tr>
+<tr><th>15</th><td><pre>        <span class='str'>'\0'</span>};</pre></td></tr>
+<tr><th>16</th><td><pre>    <span class='targ'>execute_weave_command</span>(<span class='var'>traitCommand</span>, <span class='var'>parameters</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>17</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>18</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<br/>
+<span class='header'>EH.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_8')"><span class='ext' style='padding-right:2px'>[+]</span>
+register_handler&nbsp;<span class='sym_p'>(&#160;uint8_t <span class='color_p'>event_id</span>, uint32_t <span class='color_p'>handler</span>, <span class='nowrap'>char* <span class='color_p'>evname</span>,</span> <span class='nowrap'>void* <span class='color_p'>argv</span>,</span> <span class='nowrap'>uint8_t <span class='color_p'>argc</span> )</span></span></span>
+<br/>
+<div id="c_8" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>*** register_handler evname egistrado com sucesso ***<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;stdint.h&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='prepr'>#include &lt;stdlib.h&gt;</span></pre></td></tr>
+<tr><th>4</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>5</th><td><pre>{</pre></td></tr>
+<tr><th>6</th><td><pre>    <span class='type'>void</span>* <span class='var'>argv_1</span> = malloc(<span class='num'>256</span>);</pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='targ'>register_handler</span>(</pre></td></tr>
+<tr><th>8</th><td><pre>        <span class='str'>'A'</span>,</pre></td></tr>
+<tr><th>9</th><td><pre>        <span class='num'>1</span>,</pre></td></tr>
+<tr><th>10</th><td><pre>        <span class='str'>"evname"</span>,</pre></td></tr>
+<tr><th>11</th><td><pre>        <span class='var'>argv_1</span>,</pre></td></tr>
+<tr><th>12</th><td><pre>        <span class='str'>'B'</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>13</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>14</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<br/>
+<span class='header'>libMiletus.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_9')"><span class='ext' style='padding-right:2px'>[+]</span>
+Command::abort&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>error</span> )</span></span></span>
+<br/>
+<div id="c_9" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[Command::createJsonError] Request error: error.<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>6</th><td><pre>    Command* <span class='var'>obj</span> = <span class='keyw'>new</span> Command(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>7</th><td><pre>    std::string <span class='var'>error</span> = <span class='str'>"error"</span>;</pre></td></tr>
+<tr><th>8</th><td><pre>    <span class='var'>obj</span>-&gt;<span class='targ'>abort</span>(<span class='var'>error</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>9</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>10</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_10')"><span class='ext' style='padding-right:2px'>[+]</span>
+Command::run&nbsp;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_10" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[Command::createJsonError] Request error: [Command::run] Attempt to run a non-initialized command..<br/>name<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>6</th><td><pre>    Command* <span class='var'>obj</span> = <span class='keyw'>new</span> Command(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='var'>obj</span>-&gt;<span class='targ'>run</span>(<span style='padding-left:2px;'>)</span>; <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>8</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>9</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_11')"><span class='ext' style='padding-right:2px'>[+]</span>
+Component::getState&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>trait</span>, <span class='nowrap'>char const* <span class='color_p'>state</span> )</span></span></span>
+<br/>
+<div id="c_11" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[Component::getState] Error finding trait: trait.<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>6</th><td><pre>    Component* <span class='var'>component</span> = <span class='keyw'>new</span> Component(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='var'>component</span>-&gt;<span class='targ'>getState</span>(<span class='str'>"trait"</span>, <span class='str'>"state"</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>8</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>9</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_12')"><span class='ext' style='padding-right:2px'>[+]</span>
+Component::setCommand&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>trait</span>, <span class='nowrap'>char const* <span class='color_p'>cmd</span>,</span> <span class='nowrap'>bool(*<span class='color_p'>f</span>)(Command&amp;) )</span></span></span>
+<br/>
+<div id="c_12" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[Component::setCommand] Error finding trait: trait.<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre></pre></td></tr>
+<tr><th>4</th><td><pre><span class='comm'>//auxiliary function</span></pre></td></tr>
+<tr><th>5</th><td><pre><span class='type'>bool</span></pre></td></tr>
+<tr><th>6</th><td><pre>f(Command&amp; <span class='var'>p1</span>){</pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>8</th><td><pre>}</pre></td></tr>
+<tr><th>9</th><td><pre></pre></td></tr>
+<tr><th>10</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>11</th><td><pre>{</pre></td></tr>
+<tr><th>12</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>13</th><td><pre>    Component* <span class='var'>component</span> = <span class='keyw'>new</span> Component(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>14</th><td><pre>    <span class='var'>component</span>-&gt;<span class='targ'>setCommand</span>(<span class='str'>"trait"</span>, <span class='str'>"cmd"</span>, &amp;f); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>15</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>16</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_13')"><span class='ext' style='padding-right:2px'>[+]</span>
+Component::setState&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>trait</span>, char const* <span class='color_p'>state</span>, <span class='nowrap'>ArduinoJson::JsonVariant <span class='color_p'>value</span> )</span></span></span>
+<br/>
+<div id="c_13" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[Component::setState] Error finding trait: trait.<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre></pre></td></tr>
+<tr><th>4</th><td><pre>using <span class='keyw'>namespace</span> ArduinoJson;</pre></td></tr>
+<tr><th>5</th><td><pre></pre></td></tr>
+<tr><th>6</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>7</th><td><pre>{</pre></td></tr>
+<tr><th>8</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>9</th><td><pre>    Component* <span class='var'>component</span> = <span class='keyw'>new</span> Component(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>10</th><td><pre>    JsonVariant <span class='var'>value</span>(<span class='keyw'>true</span>);</pre></td></tr>
+<tr><th>11</th><td><pre>    <span class='var'>component</span>-&gt;<span class='targ'>setState</span>(<span class='str'>"trait"</span>, <span class='str'>"state"</span>, <span class='var'>value</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>12</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>13</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_14')"><span class='ext' style='padding-right:2px'>[+]</span>
+Component::setStateCallback&nbsp;<span class='sym_p'>(&#160;char const* <span class='color_p'>trait</span>, char const* <span class='color_p'>state</span>, <span class='nowrap'>bool(*<span class='color_p'>f</span>)() )</span></span></span>
+<br/>
+<div id="c_14" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[Component::setStateCallback] Error finding trait: trait.<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre></pre></td></tr>
+<tr><th>4</th><td><pre><span class='comm'>//auxiliary function</span></pre></td></tr>
+<tr><th>5</th><td><pre><span class='type'>bool</span></pre></td></tr>
+<tr><th>6</th><td><pre>f(<span style='padding-left:2px;'>)</span>{</pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>8</th><td><pre>}</pre></td></tr>
+<tr><th>9</th><td><pre></pre></td></tr>
+<tr><th>10</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>11</th><td><pre>{</pre></td></tr>
+<tr><th>12</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>13</th><td><pre>    Component* <span class='var'>component</span> = <span class='keyw'>new</span> Component(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>14</th><td><pre>    <span class='var'>component</span>-&gt;<span class='targ'>setStateCallback</span>(<span class='str'>"trait"</span>, <span class='str'>"state"</span>, &amp;f); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>15</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>16</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_15')"><span class='ext' style='padding-right:2px'>[+]</span>
+MiletusDevice::InstallCoisaCode&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>Command&amp; <span class='color_p'>command</span> )</span></span> <span class='attr'>[static]</span></span>
+<br/>
+<div id="c_15" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[MiletusDevice::InstallCoisaCode] Received _coisa.setConfig command.<br/>[MiletusDevice::InstallCoisaCode] sendByteCode parameter not found.<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>6</th><td><pre>    Command <span class='var'>command_1</span>(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>7</th><td><pre>    MiletusDevice::<span class='targ'>InstallCoisaCode</span>(<span class='var'>command_1</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>8</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>9</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_16')"><span class='ext' style='padding-right:2px'>[+]</span>
+MiletusDevice::executeCommand&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>jsonCommand</span> )</span></span></span>
+<br/>
+<div id="c_16" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[Command::createJsonError] Request error: [MiletusDevice::executeCommand] Error parsing JSON command..<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>6</th><td><pre>    MiletusDevice* <span class='var'>device</span> = <span class='keyw'>new</span> MiletusDevice(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>7</th><td><pre>    std::string <span class='var'>jsonCommand</span> = <span class='str'>"jsonCommand"</span>;</pre></td></tr>
+<tr><th>8</th><td><pre>    <span class='var'>device</span>-&gt;<span class='targ'>executeCommand</span>(<span class='var'>jsonCommand</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>9</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>10</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_17')"><span class='ext' style='padding-right:2px'>[+]</span>
+MiletusDevice::loadJsonTraits&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>char const* <span class='color_p'>json</span> )</span></span></span>
+<br/>
+<div id="c_17" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[MiletusDevice::loadJsonTraits] Error parsing JSON trait.<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>6</th><td><pre>    MiletusDevice* <span class='var'>device</span> = <span class='keyw'>new</span> MiletusDevice(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='var'>device</span>-&gt;<span class='targ'>loadJsonTraits</span>(<span class='str'>"json"</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>8</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>9</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_18')"><span class='ext' style='padding-right:2px'>[+]</span>
+MiletusDevice::processRequest&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>struct RequestT* <span class='color_p'>request</span> )</span></span></span>
+<br/>
+<div id="c_18" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>[MiletusDevice::processRequest] Error: status unknown.<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre></pre></td></tr>
+<tr><th>4</th><td><pre><span class='keyw'>class</span> MiletusDeviceCommIf_SubClass: <span class='keyw'>public</span> MiletusDeviceCommIf</pre></td></tr>
+<tr><th>5</th><td><pre>{</pre></td></tr>
+<tr><th>6</th><td><pre><span class='keyw'>public</span>:</pre></td></tr>
+<tr><th>7</th><td><pre>    MiletusDeviceCommIf_SubClass(<span style='padding-left:2px;'>)</span>:MiletusDeviceCommIf(<span style='padding-left:2px;'>)</span>{}</pre></td></tr>
+<tr><th>8</th><td><pre></pre></td></tr>
+<tr><th>9</th><td><pre>    <span class='type'>int</span> handleEvent(<span class='keyw'>struct</span> RequestT* <span class='var'>p1</span>) {</pre></td></tr>
+<tr><th>10</th><td><pre>       <span class='keyw'>return</span> <span class='num'>3</span>;</pre></td></tr>
+<tr><th>11</th><td><pre>    }</pre></td></tr>
+<tr><th>12</th><td><pre></pre></td></tr>
+<tr><th>13</th><td><pre>    <span class='type'>bool</span> sendErrorToClient(<span style='padding-left:2px;'>)</span> {</pre></td></tr>
+<tr><th>14</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>15</th><td><pre>    }</pre></td></tr>
+<tr><th>16</th><td><pre></pre></td></tr>
+<tr><th>17</th><td><pre>    <span class='type'>bool</span> sendJsonToClient(std::string <span class='var'>json</span>) {</pre></td></tr>
+<tr><th>18</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>19</th><td><pre>    }</pre></td></tr>
+<tr><th>20</th><td><pre>};<span class='comm'>//MiletusDeviceCommIf_SubClass</span></pre></td></tr>
+<tr><th>21</th><td><pre></pre></td></tr>
+<tr><th>22</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>23</th><td><pre>{</pre></td></tr>
+<tr><th>24</th><td><pre>    std::string <span class='var'>name</span> = <span class='str'>"name"</span>;</pre></td></tr>
+<tr><th>25</th><td><pre>    MiletusDevice* <span class='var'>device</span> = <span class='keyw'>new</span> MiletusDevice(<span class='var'>name</span>);</pre></td></tr>
+<tr><th>26</th><td><pre>    <span class='keyw'>struct</span> RequestT <span class='var'>request</span> = {</pre></td></tr>
+<tr><th>27</th><td><pre>        <span class='num'>1</span>,</pre></td></tr>
+<tr><th>28</th><td><pre>        <span class='keyw'>new</span> MiletusDeviceCommIf_SubClass(<span style='padding-left:2px;'>)</span>,</pre></td></tr>
+<tr><th>29</th><td><pre>        <span class='num'>2</span>,</pre></td></tr>
+<tr><th>30</th><td><pre>        <span class='str'>"commandJson"</span>};</pre></td></tr>
+<tr><th>31</th><td><pre>    <span class='var'>device</span>-&gt;<span class='targ'>processRequest</span>(&amp;<span class='var'>request</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>32</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>33</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<br/>
+<span class='header'>linux_wifi.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_19')"><span class='ext' style='padding-right:2px'>[+]</span>
+linux_wifi::handleEvent&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>struct RequestT* <span class='color_p'>p1</span> )</span></span></span>
+<br/>
+<div id="c_19" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>Listening on port: 80<br/>Error binding socket on Server<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;linux/linux_wifi.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;libMiletusCoisa/libMiletus.h&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>4</th><td><pre></pre></td></tr>
+<tr><th>5</th><td><pre><span class='keyw'>class</span> linux_wifi_SubClass: <span class='keyw'>public</span> linux_wifi</pre></td></tr>
+<tr><th>6</th><td><pre>{</pre></td></tr>
+<tr><th>7</th><td><pre><span class='keyw'>public</span>:</pre></td></tr>
+<tr><th>8</th><td><pre>    linux_wifi_SubClass(<span style='padding-left:2px;'>)</span>:linux_wifi(<span style='padding-left:2px;'>)</span>{}</pre></td></tr>
+<tr><th>9</th><td><pre></pre></td></tr>
+<tr><th>10</th><td><pre>    <span class='type'>int</span> handleEvent(<span class='keyw'>struct</span> RequestT* <span class='var'>p1</span>) {</pre></td></tr>
+<tr><th>11</th><td><pre>       <span class='keyw'>return</span> <span class='num'>3</span>;</pre></td></tr>
+<tr><th>12</th><td><pre>    }</pre></td></tr>
+<tr><th>13</th><td><pre></pre></td></tr>
+<tr><th>14</th><td><pre>    <span class='type'>bool</span> sendErrorToClient(<span style='padding-left:2px;'>)</span> {</pre></td></tr>
+<tr><th>15</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>16</th><td><pre>    }</pre></td></tr>
+<tr><th>17</th><td><pre></pre></td></tr>
+<tr><th>18</th><td><pre>    <span class='type'>bool</span> sendJsonToClient(std::string <span class='var'>json</span>) {</pre></td></tr>
+<tr><th>19</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>20</th><td><pre>    }</pre></td></tr>
+<tr><th>21</th><td><pre>};<span class='comm'>//linux_wifi_SubClass</span></pre></td></tr>
+<tr><th>22</th><td><pre></pre></td></tr>
+<tr><th>23</th><td><pre><span class='keyw'>class</span> MiletusDeviceCommIf_SubClass: <span class='keyw'>public</span> MiletusDeviceCommIf</pre></td></tr>
+<tr><th>24</th><td><pre>{</pre></td></tr>
+<tr><th>25</th><td><pre><span class='keyw'>public</span>:</pre></td></tr>
+<tr><th>26</th><td><pre>    MiletusDeviceCommIf_SubClass(<span style='padding-left:2px;'>)</span>:MiletusDeviceCommIf(<span style='padding-left:2px;'>)</span>{}</pre></td></tr>
+<tr><th>27</th><td><pre></pre></td></tr>
+<tr><th>28</th><td><pre>    <span class='type'>int</span> handleEvent(<span class='keyw'>struct</span> RequestT* <span class='var'>p1</span>) {</pre></td></tr>
+<tr><th>29</th><td><pre>       <span class='keyw'>return</span> <span class='num'>4</span>;</pre></td></tr>
+<tr><th>30</th><td><pre>    }</pre></td></tr>
+<tr><th>31</th><td><pre></pre></td></tr>
+<tr><th>32</th><td><pre>    <span class='type'>bool</span> sendErrorToClient(<span style='padding-left:2px;'>)</span> {</pre></td></tr>
+<tr><th>33</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>34</th><td><pre>    }</pre></td></tr>
+<tr><th>35</th><td><pre></pre></td></tr>
+<tr><th>36</th><td><pre>    <span class='type'>bool</span> sendJsonToClient(std::string <span class='var'>json</span>) {</pre></td></tr>
+<tr><th>37</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>38</th><td><pre>    }</pre></td></tr>
+<tr><th>39</th><td><pre>};<span class='comm'>//MiletusDeviceCommIf_SubClass</span></pre></td></tr>
+<tr><th>40</th><td><pre></pre></td></tr>
+<tr><th>41</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>42</th><td><pre>{</pre></td></tr>
+<tr><th>43</th><td><pre>    linux_wifi* <span class='var'>obj</span> = (linux_wifi*)<span class='keyw'>new</span> linux_wifi_SubClass(<span style='padding-left:2px;'>)</span>;</pre></td></tr>
+<tr><th>44</th><td><pre>    <span class='keyw'>struct</span> RequestT <span class='var'>requestt</span> = {</pre></td></tr>
+<tr><th>45</th><td><pre>        <span class='num'>1</span>,</pre></td></tr>
+<tr><th>46</th><td><pre>        <span class='keyw'>new</span> MiletusDeviceCommIf_SubClass(<span style='padding-left:2px;'>)</span>,</pre></td></tr>
+<tr><th>47</th><td><pre>        <span class='num'>2</span>,</pre></td></tr>
+<tr><th>48</th><td><pre>        <span class='str'>"commandJson"</span>};</pre></td></tr>
+<tr><th>49</th><td><pre>    <span class='var'>obj</span>-&gt;<span class='targ'>handleEvent</span>(&amp;<span class='var'>requestt</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>50</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>51</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_20')"><span class='ext' style='padding-right:2px'>[+]</span>
+linux_wifi::linux_wifi <span class='attr'>[not-in-charge]</span>&nbsp;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_20" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>Listening on port: 80<br/>Error binding socket on Server<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;linux/linux_wifi.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre></pre></td></tr>
+<tr><th>3</th><td><pre><span class='keyw'>class</span> linux_wifi_SubClass: <span class='keyw'>public</span> linux_wifi</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre><span class='keyw'>public</span>:</pre></td></tr>
+<tr><th>6</th><td><pre>    linux_wifi_SubClass(<span style='padding-left:2px;'>)</span>:<span class='targ'>linux_wifi</span>(<span style='padding-left:2px;'>)</span>{}</pre></td></tr>
+<tr><th>7</th><td><pre></pre></td></tr>
+<tr><th>8</th><td><pre>    <span class='type'>int</span> handleEvent(<span class='keyw'>struct</span> RequestT* <span class='var'>p1</span>) {</pre></td></tr>
+<tr><th>9</th><td><pre>       <span class='keyw'>return</span> <span class='num'>1</span>;</pre></td></tr>
+<tr><th>10</th><td><pre>    }</pre></td></tr>
+<tr><th>11</th><td><pre></pre></td></tr>
+<tr><th>12</th><td><pre>    <span class='type'>bool</span> sendErrorToClient(<span style='padding-left:2px;'>)</span> {</pre></td></tr>
+<tr><th>13</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>14</th><td><pre>    }</pre></td></tr>
+<tr><th>15</th><td><pre></pre></td></tr>
+<tr><th>16</th><td><pre>    <span class='type'>bool</span> sendJsonToClient(std::string <span class='var'>json</span>) {</pre></td></tr>
+<tr><th>17</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>18</th><td><pre>    }</pre></td></tr>
+<tr><th>19</th><td><pre>};<span class='comm'>//linux_wifi_SubClass</span></pre></td></tr>
+<tr><th>20</th><td><pre></pre></td></tr>
+<tr><th>21</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>22</th><td><pre>{</pre></td></tr>
+<tr><th>23</th><td><pre>    linux_wifi_SubClass* <span class='var'>obj</span> = <span class='keyw'>new</span> linux_wifi_SubClass(<span style='padding-left:2px;'>)</span>; <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>24</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>25</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<span class="section" onclick="javascript:showContent(this, 'c_21')"><span class='ext' style='padding-right:2px'>[+]</span>
+linux_wifi::sendJsonToClient&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>std::string <span class='color_p'>json</span> )</span></span></span>
+<br/>
+<div id="c_21" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>Listening on port: 80<br/>Error binding socket on Server<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;linux/linux_wifi.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;ArduinoJson/JsonVariant.hpp&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre></pre></td></tr>
+<tr><th>4</th><td><pre><span class='keyw'>class</span> linux_wifi_SubClass: <span class='keyw'>public</span> linux_wifi</pre></td></tr>
+<tr><th>5</th><td><pre>{</pre></td></tr>
+<tr><th>6</th><td><pre><span class='keyw'>public</span>:</pre></td></tr>
+<tr><th>7</th><td><pre>    linux_wifi_SubClass(<span style='padding-left:2px;'>)</span>:linux_wifi(<span style='padding-left:2px;'>)</span>{}</pre></td></tr>
+<tr><th>8</th><td><pre></pre></td></tr>
+<tr><th>9</th><td><pre>    <span class='type'>int</span> handleEvent(<span class='keyw'>struct</span> RequestT* <span class='var'>p1</span>) {</pre></td></tr>
+<tr><th>10</th><td><pre>       <span class='keyw'>return</span> <span class='num'>1</span>;</pre></td></tr>
+<tr><th>11</th><td><pre>    }</pre></td></tr>
+<tr><th>12</th><td><pre></pre></td></tr>
+<tr><th>13</th><td><pre>    <span class='type'>bool</span> sendErrorToClient(<span style='padding-left:2px;'>)</span> {</pre></td></tr>
+<tr><th>14</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>15</th><td><pre>    }</pre></td></tr>
+<tr><th>16</th><td><pre></pre></td></tr>
+<tr><th>17</th><td><pre>    <span class='type'>bool</span> sendJsonToClient(std::string <span class='var'>json</span>) {</pre></td></tr>
+<tr><th>18</th><td><pre>       <span class='keyw'>return</span> <span class='keyw'>true</span>;</pre></td></tr>
+<tr><th>19</th><td><pre>    }</pre></td></tr>
+<tr><th>20</th><td><pre>};<span class='comm'>//linux_wifi_SubClass</span></pre></td></tr>
+<tr><th>21</th><td><pre></pre></td></tr>
+<tr><th>22</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>23</th><td><pre>{</pre></td></tr>
+<tr><th>24</th><td><pre>    linux_wifi* <span class='var'>obj</span> = (linux_wifi*)<span class='keyw'>new</span> linux_wifi_SubClass(<span style='padding-left:2px;'>)</span>;</pre></td></tr>
+<tr><th>25</th><td><pre>    std::string <span class='var'>json</span> = <span class='str'>"json"</span>;</pre></td></tr>
+<tr><th>26</th><td><pre>    <span class='var'>obj</span>-&gt;<span class='targ'>sendJsonToClient</span>(<span class='var'>json</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>27</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>28</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<br/>
+<span class='header'>linux_wrapper.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_22')"><span class='ext' style='padding-right:2px'>[+]</span>
+LinuxServer::begin&nbsp;<span class='sym_p'>(&#160;)</span></span>
+<br/>
+<div id="c_22" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>Listening on port: 1<br/>Error binding socket on Server<br/></td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;linux/linux_wrapper.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='prepr'>#include &lt;stdint.h&gt;</span></pre></td></tr>
+<tr><th>3</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>4</th><td><pre>{</pre></td></tr>
+<tr><th>5</th><td><pre>    LinuxServer* <span class='var'>server</span> = <span class='keyw'>new</span> LinuxServer((uint16_t) <span class='num'>1</span>);</pre></td></tr>
+<tr><th>6</th><td><pre>    <span class='var'>server</span>-&gt;<span class='targ'>begin</span>(<span style='padding-left:2px;'>)</span>; <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>7</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>8</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<br/>
+<span class='header'>serial.h</span>, <span class='lib_name'>sharedlibrary.so</span><br/>
+<span class="section" onclick="javascript:showContent(this, 'c_23')"><span class='ext' style='padding-right:2px'>[+]</span>
+send_byte&nbsp;<span class='sym_p'>(&#160;<span class='nowrap'>unsigned char <span class='color_p'>byte</span> )</span></span></span>
+<br/>
+<div id="c_23" style="display:none;">
+<table class='test_result' cellpadding='2'><tr><td>A</td></tr></table><table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;coisa/HAL.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>3</th><td><pre>{</pre></td></tr>
+<tr><th>4</th><td><pre>    <span class='targ'>send_byte</span>(<span class='str'>'A'</span>); <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>5</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>6</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<br/></div>
+<br/>
+<a style='font-size:11px;' href='#Top'>to the top</a><br/>
+</div>
+</div>
+<br/><br/><hr/><div class='footer' align='right'><i>Generated on Sat May 13 13:22:06 2017 by <a href='https://github.com/lvc/api-sanity-checker'>API Sanity Checker</a> 1.98.8 &#160;</i></div><br/>
+</body></html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="available, unit test" />
+    <meta name="description" content="Sanity test for LinuxClient::available ()" />
+    <title>
+        Test for LinuxClient::available ()
+    </title>
+    <style type="text/css">
+    body {
+    font-family:Arial;
+    background-color:White;
+    color:Black;
+}
+h1 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.625em;
+}
+h2 {
+    margin-bottom:0px;
+    padding-bottom:0px;
+    font-size:1.25em;
+}
+span.int {
+    font-weight:bold;
+    color:#003E69;
+}
+span.sym_p {
+    font-weight:normal;
+}
+hr {
+    color:Black;
+    background-color:Black;
+    height:1px;
+    border:0;
+}
+span.comm {
+    color:#888888;
+}
+span.str {
+    color:#FF00FF;
+}
+span.var {
+    color:Black;
+    font-style:italic;
+}
+span.prepr {
+    color:Green;
+}
+span.type {
+    color:Brown;
+}
+span.keyw {
+    font-weight:bold;
+}
+span.num {
+    color:Blue;
+}
+span.targ {
+    color:Red;
+}
+td.targ {
+    background-color:#FFD1D1
+}
+span.nowrap {
+    white-space:nowrap;
+}
+span.attr {
+    color:#333333;
+    font-weight:100;
+}
+span.color_p {
+    font-style:italic;
+    color:Brown;
+}
+span.param {
+    font-style:italic;
+}
+span.focus_p {
+    font-style:italic;
+    color:Red;
+}
+span.yellow {
+    background-color:#FFFFD6;
+}
+pre {
+    padding: 0;
+    margin: 0;
+    word-wrap:break-word;
+    white-space: pre-wrap;
+}
+table.test_view {
+    cursor:text;
+    margin-top:7px;
+    font-family:Monaco, Consolas, 'DejaVu Sans Mono', 'Droid Sans Mono', Monospace;
+    font-size:14px;
+    padding:0px;
+    border:1px solid Black;
+    color:#444444;
+    background-color:White;
+    overflow:auto;
+}
+table.test_view th {
+    background-color:White;
+    padding-right:3px;
+    padding-left:3px;
+    text-align:right;
+    font-weight:100;
+    padding:0px 4px 0px 10px;
+    vertical-align:top;
+    
+    -moz-user-select:none;
+    -o-user-select:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+table.test_view td {
+    padding-left:15px;
+    text-align:left;
+    word-wrap:break-word;
+    max-width:900px;
+    padding:0px 15px 0px 15px;
+}
+table.summary {
+    border-collapse:collapse;
+    border:1px outset black;
+}
+table.summary th {
+    background-color:#eeeeee;
+    font-weight:100;
+    text-align:left;
+    font-size:0.94em;
+    white-space:nowrap;
+    border:1px inset black;
+    padding: 1px 2px 1px 2px;
+}
+table.summary td {
+    text-align:left;
+    white-space:nowrap;
+    border:1px inset black;
+    padding: 1px 2px 1px 2px;
+}
+.footer {
+    font-size:0.75em;
+}
+    </style>
+    <script type="text/javascript" language="JavaScript">
+    <!--
+    
+    -->
+    </script>
+    </head><body>
+<h1>Test for <span style='color:Red'>available</span> method of <span style='color:Blue'>LinuxClient</span> class</h1>
+<span class='yellow'>LinuxClient::available&nbsp;<span class='sym_p'>(&#160;)</span></span>
+<br/><i><span class='yellow'>_ZN11LinuxClient9availableEv</span></i>
+<h2>Info</h2><hr/>
+<table class='summary'>
+<tr><th>Header File</th><td>linux/linux_wrapper.h</td></tr>
+<tr><th>Class</th><td>LinuxClient</td></tr>
+<tr><th>Method</th><td>available</td></tr>
+<tr><th>Return Type</th><td>int</td></tr>
+</table>
+<h2>Code</h2><hr/>
+<!--Test-->
+<table cellspacing='0' class='test_view'>
+<tr><td colspan='2'>&nbsp;</td></tr>
+<tr><th>1</th><td><pre><span class='prepr'>#include &lt;linux/linux_wrapper.h&gt;</span></pre></td></tr>
+<tr><th>2</th><td><pre><span class='type'>int</span> main(<span class='type'>int</span> <span class='var'>argc</span>, <span class='type'>char</span> *<span class='var'>argv</span>[<span style='padding-left:2px;'>]</span>)</pre></td></tr>
+<tr><th>3</th><td><pre>{</pre></td></tr>
+<tr><th>4</th><td><pre>    LinuxClient* <span class='var'>client</span> = <span class='keyw'>new</span> LinuxClient(<span class='num'>1</span>);</pre></td></tr>
+<tr><th>5</th><td><pre>    <span class='var'>client</span>-&gt;<span class='targ'>available</span>(<span style='padding-left:2px;'>)</span>; <span class='comm'>//target call</span></pre></td></tr>
+<tr><th>6</th><td><pre>    <span class='keyw'>return</span> <span class='num'>0</span>;</pre></td></tr>
+<tr><th>7</th><td><pre>}</pre></td></tr>
+<tr><td colspan='2'>&nbsp;</td></tr>
+</table>
+<!--Test_End-->
+<hr/><div class='footer' align='right'><i>Generated on Sat May 13 13:21:32 2017 by <a href='https://github.com/lvc/api-sanity-checker'>API Sanity Checker</a> 1.98.8 &#160;</i></div><br/>
+</body>
+</html>

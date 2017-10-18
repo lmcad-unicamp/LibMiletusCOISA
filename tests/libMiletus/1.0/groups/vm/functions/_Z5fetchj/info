@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: fetch (uint32_t PC)
+Symbol: _Z5fetchj
+Short Name: fetch
+Header: coisa/vm.h
+Shared Object: sharedlibrary.so

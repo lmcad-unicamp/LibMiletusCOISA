@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: linux_wifi::linux_wifi [not-in-charge] ()
+Symbol: _ZN10linux_wifiC2Ev
+Short Name: linux_wifi
+Header: linux/linux_wifi.h
+Shared Object: sharedlibrary.so

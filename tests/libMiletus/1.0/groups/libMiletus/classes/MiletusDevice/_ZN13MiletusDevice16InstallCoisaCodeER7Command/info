@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: MiletusDevice::InstallCoisaCode (Command& command) [static]
+Symbol: _ZN13MiletusDevice16InstallCoisaCodeER7Command
+Short Name: InstallCoisaCode
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

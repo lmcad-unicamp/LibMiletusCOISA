@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: Component::getState (char const* trait, char const* state)
+Symbol: _ZN9Component8getStateEPKcS1_
+Short Name: getState
+Header: libMiletusCoisa/libMiletus.h
+Shared Object: sharedlibrary.so

@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: eh_init ()
+Symbol: _Z7eh_initv
+Short Name: eh_init
+Header: coisa/EH.h
+Shared Object: sharedlibrary.so

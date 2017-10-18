@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: timed_polling ()
+Symbol: _Z13timed_pollingv
+Short Name: timed_polling
+Header: coisa/EH.h
+Shared Object: sharedlibrary.so

@@ -1,0 +1,6 @@
+Library: libMiletus-1.0
+Interface: vm_cpu ()
+Symbol: _Z6vm_cpuv
+Short Name: vm_cpu
+Header: coisa/vm.h
+Shared Object: sharedlibrary.so

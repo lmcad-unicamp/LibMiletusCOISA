@@ -1,0 +1,4 @@
+test.cpp: In function ‘int main(int, char**)’:
+test.cpp:4:16: warning: deprecated conversion from string constant to ‘char*’ [-Wwrite-strings]
+     print("str"); //target call
+                ^
